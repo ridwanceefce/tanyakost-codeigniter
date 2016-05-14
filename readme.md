@@ -31,4 +31,4 @@ git commit -m "pesan (contoh: tambah function tampil_kost)"
 git push origin master
 ```
 
-* kemudian buat pull request ke repository ini dengan cara klik **Create pull request**
+* kemudian buat pull request ke repository ini dengan cara klik **Create pull request** di repository akun masing masing

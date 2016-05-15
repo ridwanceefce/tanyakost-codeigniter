@@ -50,7 +50,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'home';
-$route['login-user'] = 'user/login_user'; // routing url /login-user ke constroller login_user pada folder user
-$route['login-admin'] = 'admin/login_admin'; // routing url /login-admin ke controller login_admin pada folder admin
+$route['login-user'] = 'user/login'; // routing url /login-user ke constroller login_user pada folder user
+$route['login-admin'] = 'admin/login'; // routing url /login-admin ke controller login_admin pada folder admin
+$route['registrasi'] = 'user/registrasi'; // routing url /registrasi ke controller Registrasi.php pada folder user
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

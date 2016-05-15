@@ -1,0 +1,62 @@
+#navbar-main {
+  background: #e74f36;
+  border-color: #e74f36;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.logo-md {
+  height: 50px;
+  padding: 5px 5px;
+  margin-left: 10px;
+}
+
+.logo-xs {
+  height: 50px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+#searchInput {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.nav-form {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+#nav-welcome {
+  margin-top: 0px;
+}
+
+#nav-welcome li {
+  text-align: center;
+}
+#nav-welcome .active a {
+  background-color: #d4523c !important;
+  font-weight: bold;
+}
+#nav-welcome li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#nav-welcome li a:hover {
+  background-color: #d4523c !important;
+  font-weight: bold;
+}
+
+#hamburger:hover, #hamburger {
+  background-color: #d4523c;
+  border-color: #fff;
+}
+
+#hamburger span {
+  background-color: #fff;
+}

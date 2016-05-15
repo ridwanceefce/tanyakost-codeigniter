@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,8 +31,9 @@
     <link href="<?= base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="<?= base_url('assets/css/home_page.css') ?>" rel="stylesheet">
-    <link href="<?= base_url('assets/css/normalize.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/user-login.css') ?>" rel="stylesheet">
+    <link rel="stylesheet" href="<?= base_url('assets/css/navbar-main.css') ?>">
+    <link href="css/normalize.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="<?= base_url('assets/font-awesome/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css">
@@ -53,14 +55,13 @@
   </head>
   <body>
 
-      <header class="container">
-        <div class="navbar navbar-default" id="navbar-welcome">
-          <div class="container-fluid">
-            <div class="navbar-header">
+    <header class="container-fluid">
+      <div class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+        <div class="container-fluid">
+
+          <div class="navbar-header">
             <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-            <button class="navbar-toggle collapsed" id="hamburger" 
-                    data-target=".navigasi-welcome" data-toggle="collapse" type="button" 
-                                                    aria-expanded="false" aria-controls="navbar">
+            <button class="navbar-toggle collapsed" id="hamburger" data-target=".navigasi-welcome" data-toggle="collapse" type="button" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -68,13 +69,11 @@
               <span class="icon-bar"></span>
             </button>
 
-              <a href="<?= base_url() ?>" class="navbar-brand">
-                <img src="<?= base_url('assets/images/logo-takos-navbar-1.svg') ?>" 
-                    class="img-responsive logo-md hidden-xs" alt="Logo Tanyakost" >
-                <img src="<?= base_url('assets/images/logo-takos.svg') ?>" 
-                    class="img-responsive logo-xs visible-xs" alt="Logo Tanyakost" >
-              </a>
-            </div>
+            <a href="<?= base_url() ?>" class="navbar-brand">
+              <img src="<?= base_url('assets/images/logo-takos-navbar-1.svg') ?>" class="img-responsive hidden-xs logo-md" alt="Logo Tanyakost" >
+              <img src="<?= base_url('assets/images/logo-takos.svg') ?>" class="img-responsive visible-xs logo-xs" alt="Logo Tanyakost" >
+            </a>
+          </div>
 
             <div class="navbar-collapse collapse navigasi-welcome">
               <div class="container-fluid">
@@ -91,39 +90,46 @@
         </div>
       </header>
 
-      <!-- Content -->
-      <div class="content container clearfix">
-        <div class="row">
-          <div class="banner col-md-offset-2 col-md-8">
-            <p>Bingung cari kost? <br> cari aja di <b>tanyakost.com</b></p>
-            <div class="form-group">
-              <div class="inner-addon right-inner-addon">
-                <i class="fa fa-search" aria-hidden="true"></i>
-                <input type="search" class="form-control" id="welcome_search" placeholder="Cari kost...">
-              </div>
+      <div class="container">
+        <div class="col-md-6 col-md-offset-3">
+          <div id="login-section" class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Login</h3>
             </div>
-          </div>
+            <form>
+              <div class="panel-body">
+                <label>Email</label>
+                <input type="email" id="email-user" class="form-control">
+                <label>Password</label>
+                <input type="password" id="pass-user" class="form-control">
+              </div>
+              <div class="panel-footer">
+                <a href="profile.html" class="btn" id="btn-login">Login</a>
+                <p>belum punya akun? <a href="daftar.html">Daftar</a></p>
+              </div>
+            </form>
+          </div> <!-- /#login-section -->
         </div>
-          
-        <div class="row text-center" id="pasang-iklan">
-          <p>Ingin pasang iklan kost?</p>
-          <button class="button_tambah">Pasang iklan</button>
-        </div>
-      </div>
-      <!-- /content -->
+      </div> <!-- /.container -->
 
       <!-- footer -->
-      <div class="container clearfix">
-        <footer class="row">
-          <p class="copyright col-md-4 col-sm-12">&copy; 2016 tanyakost.com</p>
-          <nav class="hidden-xs">
-            <a href="#"><i class="fa fa-facebook-square"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-          </nav>
+      <div class="container-fluid">
+        <footer class="row navbar navbar-fixed-bottom" id="footer-main">
+          <!-- <div class="container-fluid"> -->
+            <!-- <hr class="hr-white"> -->
+            <div class="col-md-4">
+              <p class="copyright">&copy; 2016 tanyakost.com</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+              <nav class="hidden-xs">
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </nav>
+            </div>
+          <!-- </div> -->
         </footer>
       </div>
       <!-- /footer -->
-
   </body>
 </html>

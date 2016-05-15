@@ -1,0 +1,189 @@
+body {
+  background: #f2dede;
+  font-family: 'Roboto', sans-serif;
+  right: 0;
+  margin: 0;
+/*  overflow: hidden;
+  position: relative;*/
+  padding-top: 60px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.pd-rl-5 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.mg-tb-5 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.pd-r-5 {
+  padding-right: 5px;
+}
+.pd-l-5 {
+  padding-left: 5px;
+}
+.mg-tb-10 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.pd-l-10 {
+  padding-left: 10px;
+}
+.pd-r-10 {
+  padding-right: 10px;
+}
+
+.hr-bio {
+    border: 1.5px solid #e74f36;
+}
+
+.hr-primary {
+  border-color: #e74f36;
+}
+.hr-white {
+  border-color: #fff;
+}
+#navbar-main {
+  background: #e74f36;
+  border-color: #e74f36;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.logo-md {
+  height: 50px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.logo-xs {
+  height: 50px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+#konten-show {
+    background-color: #fff;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    padding-top: .5em;
+    padding-bottom: 1em;
+}
+#konten-show h2 {
+    margin-top: .2em;
+    margin-bottom: .2em;
+    text-transform: uppercase;
+    color: #e74f36;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+#bio-show {
+    background-color: #fff;
+    border-radius: 5px;
+    padding-bottom: .5em;
+    padding-top: .5em;
+}
+
+#bio-show h2 {
+    margin-top: .2em;
+    margin-bottom: .2em;
+    text-transform: uppercase;
+    color: #e74f36;
+    font-size: 1.5em;
+    text-align: center;
+}
+.bio-head {
+    text-align: center;
+}
+.bio-head img {
+    height: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .2em;
+}
+
+.nama-pemilik {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #d4523c;
+    margin-bottom: .1em;
+}
+
+.since {
+    font-size: .9em;
+}
+
+.bio-message label {
+    color: #e74f36;
+}
+
+#pesan-user {
+    border: 2px solid #e74f36;
+}
+
+#email-user {
+    margin-top: .75em;
+    border: 2px solid #e74f36;
+}
+
+#pesan-user::-webkit-input-placeholder { color: #e74f36; }
+#pesan-user::-moz-placeholder {color: #e74f36; }
+#email-user::-webkit-input-placeholder { color: #e74f36; }
+#email-user::-moz-placeholder {color: #e74f36; }
+
+
+#kirim-pesan {
+    color: #fff;
+    background-color: #e74f36;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+footer {
+  background-color: #e74f36;
+  margin-top: 1em;
+  padding: 1em 1.5em;
+}
+
+footer p {
+  font-weight: 100;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+footer nav {
+  /*float: right;*/
+  text-align: right;
+}
+
+footer nav a {
+  font-size: 1.5em;
+  margin-left: .75em;
+  color: #ffffff;
+}
+
+#fasilitas, #harga, #deskripsi {
+    margin-top: 1em;
+}
+
+.time {
+    font-size: .9em;
+}

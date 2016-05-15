@@ -50,41 +50,7 @@
         <div class="row">
           <div class="" id="main-profil">
             <div class="col-md-2 col-sm-4 pd-rl-5" >
-              <div class="col-md-12" id="profil-bio">
-                <div class="bio-head">
-                  <img src="<?= base_url('assets/images/admin/photo_400x400.jpg') ?>" class="img-responsive img-circle" alt="">
-                  <div class="user-name-status">
-                    <p class="user-name">Miral Achmed</p>
-                    <p class="user-status">Admin</p>
-                  </div>
-                </div>
-                <div class="clearfix"></div>
-                <hr class="hr-primary">
-                <div class="bio-control">
-                  <ul class="control">
-                    <li class="active">
-                      <span><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</span>
-                    </li>
-                    <li>
-                      <span><i class="fa fa-user" aria-hidden="true"></i>  Users</span><span class="badge pull-right">1</span>
-                    </li>
-                    <li>
-                      <span><i class="fa fa-home" aria-hidden="true"></i> Kosts</span><span class="badge pull-right">1</span>
-                    </li>
-                    <li>
-                      <span><i class="fa fa-envelope" aria-hidden="true"></i> Pesan</span><span class="badge pull-right">10</span>
-                    </li>
-                  </ul>
-                </div> <!-- /.bio-control -->
-                <hr class="hr-primary">
-                <div class="settings">
-                  <h3>Pengaturan</h3>
-                  <ul class="profil-setting">
-                    <li><span><i class="fa fa-cogs" aria-hidden="true"></i>Ubah profil</span></li>
-                    <li><span><i class="fa fa-sign-out" aria-hidden="true"></i>Log out</span></li>
-                  </ul>
-                </div>
-              </div> <!-- /#profil-bio -->
+              <?php $this->load->view('admin/layouts/admin_bio') ?>
             </div>
 
             <div class="col-md-10 col-sm-8 pd-rl-5" >

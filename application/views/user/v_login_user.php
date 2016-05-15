@@ -33,7 +33,7 @@
     <!-- Custom CSS -->
     <link href="<?= base_url('assets/css/user-login.css') ?>" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('assets/css/navbar-main.css') ?>">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="<?= base_url('assets/css/normalize.css') ?>" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="<?= base_url('assets/font-awesome/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css">
@@ -56,39 +56,8 @@
   <body>
 
     <header class="container-fluid">
-      <div class="navbar navbar-default navbar-fixed-top" id="navbar-main">
-        <div class="container-fluid">
-
-          <div class="navbar-header">
-            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-            <button class="navbar-toggle collapsed" id="hamburger" data-target=".navigasi-welcome" data-toggle="collapse" type="button" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a href="<?= base_url() ?>" class="navbar-brand">
-              <img src="<?= base_url('assets/images/logo-takos-navbar-1.svg') ?>" class="img-responsive hidden-xs logo-md" alt="Logo Tanyakost" >
-              <img src="<?= base_url('assets/images/logo-takos.svg') ?>" class="img-responsive visible-xs logo-xs" alt="Logo Tanyakost" >
-            </a>
-          </div>
-
-            <div class="navbar-collapse collapse navigasi-welcome">
-              <div class="container-fluid">
-                <ul class="nav navbar-nav navbar-right" id="nav-welcome">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Contact us</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="<?= base_url('login-user') ?>">Login</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+      <?php $this->load->view('layouts/navbar-main') ?>  
+    </header>
 
       <div class="container">
         <div class="col-md-6 col-md-offset-3">
@@ -105,7 +74,7 @@
               </div>
               <div class="panel-footer">
                 <a href="profile.html" class="btn" id="btn-login">Login</a>
-                <p>belum punya akun? <a href="daftar.html">Daftar</a></p>
+                <p>belum punya akun? <a href="<?= base_url('registrasi') ?>">Daftar</a></p>
               </div>
             </form>
           </div> <!-- /#login-section -->

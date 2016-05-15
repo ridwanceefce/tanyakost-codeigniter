@@ -8,20 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="apple-touch-icon" sizes="57x57" href="<?= base_url('assets/images/favico/apple-icon-57x57.png'); ?>">
-    <link rel="apple-touch-icon" sizes="60x60" href="<?= base_url('assets/images/favico/apple-icon-60x60.png'); ?>">
-    <link rel="apple-touch-icon" sizes="72x72" href="<?= base_url('assets/images/favico/apple-icon-72x72.png'); ?>">
-    <link rel="apple-touch-icon" sizes="76x76" href="<?= base_url('assets/images/favico/apple-icon-76x76.png'); ?>">
-    <link rel="apple-touch-icon" sizes="114x114" href="<?= base_url('assets/images/favico/apple-icon-114x114.png'); ?>">
-    <link rel="apple-touch-icon" sizes="120x120" href="<?= base_url('assets/images/favico/apple-icon-120x120.png'); ?>">
-    <link rel="apple-touch-icon" sizes="144x144" href="<?= base_url('assets/images/favico/apple-icon-120x120.png'); ?>">
-    <link rel="apple-touch-icon" sizes="152x152" href="<?= base_url('assets/images/favico/apple-icon-152x152.png'); ?>">
-    <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url('assets/images/favico/apple-icon-180x180.png'); ?>">
-    <link rel="icon" type="image/png" sizes="192x192"  href="<?= base_url('assets/images/favico/android-icon-192x192.png'); ?>">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('assets/images/favicon-32x32.png'); ?>">
-    <link rel="icon" type="image/png" sizes="96x96" href="<?= base_url('assets/images/favicon-96x96.png'); ?>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/images/favicon-16x16.png'); ?>">
-    <link rel="manifest" href="<?= base_url('assets/manifest.json'); ?>">
+    <?php $this->load->view('layouts/favico'); ?>
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
@@ -63,41 +50,7 @@
         <div class="row">
           <div class="" id="main-profil">
             <div class="col-md-2 col-sm-4 pd-rl-5" >
-              <div class="col-md-12" id="profil-bio">
-                <div class="bio-head">
-                  <img src="<?= base_url('assets/images/photo_400x400.jpg') ?>" class="img-responsive img-circle" alt="">
-                  <div class="user-name-status">
-                    <p class="user-name">Miral Achmed</p>
-                    <p class="user-status">Admin</p>
-                  </div>
-                </div>
-                <div class="clearfix"></div>
-                <hr class="hr-primary">
-                <div class="bio-control">
-                  <ul class="control">
-                    <li class="active">
-                      <span><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</span>
-                    </li>
-                    <li>
-                      <span><i class="fa fa-user" aria-hidden="true"></i>  Users</span><span class="badge pull-right">1</span>
-                    </li>
-                    <li>
-                      <span><i class="fa fa-home" aria-hidden="true"></i> Kosts</span><span class="badge pull-right">1</span>
-                    </li>
-                    <li>
-                      <span><i class="fa fa-envelope" aria-hidden="true"></i> Pesan</span><span class="badge pull-right">10</span>
-                    </li>
-                  </ul>
-                </div> <!-- /.bio-control -->
-                <hr class="hr-primary">
-                <div class="settings">
-                  <h3>Pengaturan</h3>
-                  <ul class="profil-setting">
-                    <li><span><i class="fa fa-cogs" aria-hidden="true"></i>Ubah profil</span></li>
-                    <li><span><i class="fa fa-sign-out" aria-hidden="true"></i>Log out</span></li>
-                  </ul>
-                </div>
-              </div> <!-- /#profil-bio -->
+              <?php $this->load->view('admin/layouts/admin_bio'); ?>
             </div>
 
             <div class="col-md-10 col-sm-8 pd-rl-5" >

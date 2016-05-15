@@ -11,7 +11,7 @@
                 <div class="bio-control">
                   <ul class="control">
                     <li class="active">
-                      <span><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</span>
+                      <a href="<?= base_url('admin/profile') ?>"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a>
                     </li>
                     <li>
                       <span><i class="fa fa-user" aria-hidden="true"></i>  Users</span><span class="badge pull-right">1</span>

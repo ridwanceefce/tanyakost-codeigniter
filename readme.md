@@ -5,6 +5,14 @@
 
 # Petunjuk Penggunaan Repo Local
 * Clone dulu repository hasil fork yang ada di akun masing - masin1. 2. g.
+* Setiap sebelum melakukan pengeditan, pastikan repo local yang ada di komputer kita sudah update, dengan cara menjalankan perintah:
+
+```
+#!git
+
+git pull origin master
+```
+
 * Edit file, sesuai keinginan, **Jangan lupa di tambahkan comment yang jelas di setiap barisnya**
 * Jalankan perintah:
 ```

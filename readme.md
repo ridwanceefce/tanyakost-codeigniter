@@ -5,7 +5,7 @@
 
 # Petunjuk Penggunaan Repo Local
 * Clone dulu repository hasil fork yang ada di akun masing - masin1. 2. g.
-* Edit file, sesuai keinginan
+* Edit file, sesuai keinginan, **Jangan lupa di tambahkan comment yang jelas di setiap barisnya**
 * Jalankan perintah:
 ```
 #!git

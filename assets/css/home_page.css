@@ -1,0 +1,156 @@
+body {
+  background: #e74f36;
+  font-family: 'Roboto', sans-serif;
+  right: 0;
+  margin: 0;
+  /*overflow: hidden;
+  position: relative;*/
+}
+
+#navbar-welcome {
+  margin-bottom: 3em;
+  background-color: #e74f36;
+  border-color: #e74f36;
+  border-radius: 0px;
+  /*border-bottom: 1px solid white;*/
+  /*border-top: 1px solid white;*/
+  padding-top: 1em;
+  height: 8em;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.logo-md {
+  padding: 10px;
+  height: 4.5em;
+}
+
+.logo-xs {
+  padding: 0px;
+  height: 50px;  
+}
+
+#navbar-welcome {
+  background: #e74f36;
+  border-color: #e74f36;
+  border-radius: 0;
+}
+#navbar-welcome li {
+  text-align: center;
+}
+
+.navigasi-welcome {
+  margin-top: 1em;
+}
+
+#nav-welcome li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#nav-welcome li a:hover {
+  border-bottom: 2px solid #ffffff;
+  background-color: #e74f36 !important;
+  font-weight: bold;
+}
+
+#hamburger:hover, #hamburger {
+  background-color: #d4523c;
+  border-color: #fff;
+}
+
+#hamburger span {
+  background-color: #fff;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+ background:none;
+ border-bottom: 2px solid #ffffff;
+}
+
+.button_tambah {
+  text-transform: uppercase;
+  background:#d4523c;
+  font-weight: 300;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 40px;
+  border-radius: 60px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+#pasang-iklan p {
+  display: inline-block;
+  margin-right: 5px;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 2rem;
+  /*text-transform: uppercase;*/
+}
+/*************/
+.content {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner p {
+  font-size: 5.3rem;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+.banner p b {
+  font-weight: 300;
+}
+
+#welcome_search {
+  border: 3px solid #d4523c;
+  height: 3em;
+}
+
+.right-inner-addon {
+    position: relative;
+}
+.right-inner-addon input {
+    padding-right: 30px;
+}
+.right-inner-addon i {
+    color: #e74f36;
+    position: absolute;
+    right: 0px;
+    padding: 12px 12px;
+    pointer-events: none;
+}
+
+footer {
+  border-top: 1px solid #ffffff;
+  margin-top: 4em;
+  padding: 2em 1.5em 0em;
+}
+
+footer p {
+  /*float: left;*/
+  font-weight: 100;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+footer nav {
+  float: right;
+  /*text-align: right;*/
+}
+
+footer nav a {
+  font-size: 1.5em;
+  margin-left: .75em;
+  color: #ffffff;
+}

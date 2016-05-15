@@ -53,5 +53,6 @@ $route['default_controller'] = 'home';
 $route['login-user'] = 'user/login'; // routing url /login-user ke constroller login_user pada folder user
 $route['login-admin'] = 'admin/login'; // routing url /login-admin ke controller login_admin pada folder admin
 $route['registrasi'] = 'user/registrasi'; // routing url /registrasi ke controller Registrasi.php pada folder user
+$route['user/profile'] = 'user/user';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

@@ -1,0 +1,75 @@
+body {
+  background: #f2dede;
+  font-family: 'Roboto', sans-serif;
+  right: 0;
+  margin: 0;
+/*  overflow: hidden;
+  position: relative;*/
+  padding-top: 4.5em;
+  /*padding-bottom: 60px;*/
+}
+
+#main-profil {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#profil-konten {
+  background-color: #fff;
+  border-radius: 5px;
+  padding-top: 1em;
+  min-height: 40em;
+}
+  #profil-konten h3 {
+    margin-top: .4em;
+    font-size: 1.2em;
+    color: #e74f36;
+    font-weight: normal;
+  }
+  #profil-konten h3 i {
+    margin-right: .4em;
+  }
+  .kost-item {
+    border: 3px solid #e74f36;
+    padding: 0px;
+    /*margin-bottom: 0px;*/
+    text-align: center;
+    position: relative;
+  }
+    .box {
+      position: absolute;
+      background-color: #fff;
+      bottom: 0px;
+      width: 100%;
+      background: rgba(255,255,255,0.7);
+    }
+    .box .since {
+      font-size: 1.2rem;
+    }
+    .box .kost-label {
+      padding-top: .5em;
+      padding-bottom: .5em;
+    }
+footer {
+  background-color: #e74f36;
+  margin-top: 1em;
+  padding: 1em 1.5em;
+}
+
+footer p {
+  font-weight: 100;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+footer nav {
+  /*float: right;*/
+  text-align: right;
+}
+
+footer nav a {
+  font-size: 1.5em;
+  margin-left: .75em;
+  color: #ffffff;
+}

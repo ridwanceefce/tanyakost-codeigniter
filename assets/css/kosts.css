@@ -1,0 +1,164 @@
+body {
+  background: #f2dede;
+  font-family: 'Roboto', sans-serif;
+  right: 0;
+  margin: 0;
+/*  overflow: hidden;
+  position: relative;*/
+  padding-top: 60px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.pd-rl-5 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.pd-r-5 {
+  padding-right: 5px;
+}
+.pd-l-5 {
+  padding-left: 5px;
+}
+.pd-l-10 {
+  padding-left: 10px;
+}
+.pd-r-10 {
+  padding-right: 10px;
+}
+
+.hr-primary {
+  border-color: #e74f36;
+}
+.hr-white {
+  border-color: #fff;
+}
+#navbar-main {
+  background: #e74f36;
+  border-color: #e74f36;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.logo-md {
+  height: 50px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.logo-xs {
+  height: 50px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+#filter {
+  background: #d3d3d3;
+  /*margin-top: 60px;*/
+  margin-bottom: 1em;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  /*height: 100px;
+  width: 215px;
+  position: fixed;
+  top: 63px;
+  left: 10px;*/
+}
+
+#filter h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2em;
+  color: #e74f36;
+  margin: 0;
+  padding-top: .75em;
+}
+#filter .form-group {
+  margin-bottom: 10px;
+  color: #e74f36;
+}
+
+#cari-filter {
+  border-radius: 40px;
+  background: #e74f36;
+  /*width: 100px;*/
+  color: #ffffff;
+/*  margin-left: 2em;
+  margin-top: 1em;*/
+}
+#konten {
+  background: #ffffff;
+  /*margin-top: 60px;*/
+  border-radius: 5px;
+}
+
+#konten h2 {
+  color: #d3d3d3;
+  font-weight: 400;
+  font-size: 2em;
+  margin: 0px;
+  padding-top: .75em;
+}
+
+#konten h2 span {
+  color: #e74f36;
+}
+
+.kost-item {
+  border: 3px solid #e74f36;
+  padding: 0;
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background: rgba(255,255,255,0.7);
+}
+
+.box p {
+  text-align: center;
+  font-size: 1.7rem;
+  color: #e74f36;
+  margin-bottom: 0;
+  padding-top: .7em; 
+  padding-bottom: .7em;
+}
+
+footer {
+  background-color: #e74f36;
+  margin-top: 1em;
+  padding: 1em 1.5em;
+}
+
+footer p {
+  font-weight: 100;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+footer nav {
+  /*float: right;*/
+  text-align: right;
+}
+
+footer nav a {
+  font-size: 1.5em;
+  margin-left: .75em;
+  color: #ffffff;
+}

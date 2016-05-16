@@ -10,16 +10,13 @@
 * Setiap sebelum melakukan pengeditan, pastikan repo local yang ada di komputer kita sudah update, dengan cara menjalankan perintah:
 
 ```
-#!git
-
 git pull origin master
 ```
 
 * Edit file, sesuai keinginan, **Jangan lupa di tambahkan comment yang jelas di setiap barisnya**
 * Jalankan perintah:
-```
-#!git
 
+```
 git add --all
 ```
 * untuk menambahkan file hasil yang telah kita ubah ke **Staging Area Git**
@@ -27,8 +24,6 @@ git add --all
 
 
 ```
-#!git
-
 git commit -m "pesan (contoh: tambah function tampil_kost)"
 ```
 
@@ -36,8 +31,6 @@ git commit -m "pesan (contoh: tambah function tampil_kost)"
 
 
 ```
-#!git
-
 git push origin master
 ```
 

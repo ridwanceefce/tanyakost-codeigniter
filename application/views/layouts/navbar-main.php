@@ -24,7 +24,7 @@
                   <li><a href="#">About us</a></li>
                   <li><a href="#">Contact us</a></li>
                   <li role="separator" class="divider"></li>
-                  <li class="active"><a href="<?= base_url('login-user') ?>">Login</a></li>
+                  <li><a href="<?= base_url('login-user') ?>">Login</a></li>
                 </ul>
               </div>
             </div>

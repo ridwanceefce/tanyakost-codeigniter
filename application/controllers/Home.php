@@ -12,6 +12,16 @@ class Home extends CI_Controller {
   public function index()
   {
     $data['judul'] = "Tanyakost.com | Tempat cari kost";
-    $this->load->view('home_page', $data);
+    $this->load->view('v_home_page', $data);
+  }
+
+  public function cari_kost() {
+    $data['judul'] = "Tanyakost.com | Tempat cari kost";
+    $this->load->view('v_kost_hasil', $data);
+  }
+
+  public function cari_detail() { // mestinya ada id
+    $data['judul'] = "Tanyakost.com | Tempat cari kost";
+    $this->load->view('v_hasil_detail', $data);
   }
 }

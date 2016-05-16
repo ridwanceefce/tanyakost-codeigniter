@@ -28,7 +28,7 @@
                 <div class="settings">
                   <h3>Pengaturan</h3>
                   <ul class="profil-setting">
-                    <li><span><i class="fa fa-cogs" aria-hidden="true"></i>Ubah profil</span></li>
+                    <li><a href="<?= base_url('admin/profile/edit') ?>"><span><i class="fa fa-cogs" aria-hidden="true"></i>Ubah profil</span></a></li>
                     <li><span><i class="fa fa-sign-out" aria-hidden="true"></i>Log out</span></li>
                   </ul>
                 </div>

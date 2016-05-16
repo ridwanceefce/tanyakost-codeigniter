@@ -9,5 +9,9 @@ class Admin extends CI_Controller {
     $this->load->view('admin/v_profile_admin', $data);
   }
 
+  public function ubah_profile() {
+    $data['judul'] = "Tanyakost.com | Tempat cari kost";
+    $this->load->view('admin/v_profile_ubah_admin', $data);
+  }
 
 }

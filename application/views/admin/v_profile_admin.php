@@ -18,9 +18,11 @@
     <link href="<?= base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="<?= base_url('assets/css/admin-profil.css') ?>" rel="stylesheet">
+    <link rel="stylesheet" href="<?= base_url('assets/css/admin-profil.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/admin-bio.css') ?>"> 
+    <!-- load style untuk bagian admin-bio -->
     <link rel="stylesheet" href="<?= base_url('assets/css/navbar-main.css') ?>">
-    <link href="<?= base_url('assets/css/normalize.css') ?>" rel="stylesheet">
+    <link rel="stylesheet" href="<?= base_url('assets/css/normalize.css') ?>">
 
     <!-- Custom Fonts -->
     <link href="<?= base_url('assets/font-awesome/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css">

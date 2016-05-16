@@ -59,7 +59,7 @@
                 <input type="password" id="pass-user" class="form-control">
               </div>
               <div class="panel-footer">
-                <a href="<?= base_url('admin/profile') ?>" class="btn" id="btn-login">Login</a>
+                <a href="<?= base_url('admin') ?>" class="btn" id="btn-login">Login</a>
                 <p>belum punya akun? <a href="<?= base_url('registrasi') ?>">Daftar</a></p>
               </div>
             </form>

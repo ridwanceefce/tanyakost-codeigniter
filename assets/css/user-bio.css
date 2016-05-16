@@ -28,6 +28,17 @@
     .bio-control {
       text-align: center;
     }
+    .btn-tambah, .btn-tambah:active, .btn-tambah:focus {
+      text-transform: uppercase;
+      background-color: #e74f36;
+      color: #fff;
+      margin-bottom: 1em;
+    }
+    .btn-tambah:hover {
+      color: #e74f36;
+      background-color: #fff;
+      border: 1px solid #e74f36;
+    }
     .control {
       padding-left: .6em;
       text-align: left;
@@ -38,12 +49,6 @@
     .control li {
       list-style-type: none;
       margin-bottom: .4em;
-    }
-    .control li a {
-      color: #333;
-    }
-    .control li a:hover {
-      text-decoration: none;
     }
     .control li i {
       margin-right: .4em;

@@ -11,10 +11,10 @@
                 <div class="bio-control">
                   <ul class="control">
                     <li class="active">
-                      <a href="<?= base_url('admin/profile') ?>"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a>
+                      <a href="<?= base_url('admin') ?>"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a>
                     </li>
                     <li>
-                      <span><i class="fa fa-user" aria-hidden="true"></i>  Users</span><span class="badge pull-right">1</span>
+                      <a href=""><span><i class="fa fa-user" aria-hidden="true"></i>  Users</span><span class="badge pull-right">1</span></a>
                     </li>
                     <li>
                       <a href="<?= base_url('admin/kost/all') ?>"><span><i class="fa fa-home" aria-hidden="true"></i> Kosts</span><span class="badge pull-right">1</span></a>

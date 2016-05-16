@@ -55,6 +55,7 @@ $route['login-admin'] = 'admin/login'; // routing url /login-admin ke controller
 $route['registrasi'] = 'user/registrasi'; // routing url /registrasi ke controller Registrasi.php pada folder user
 $route['user/profile'] = 'user/user';
 $route['admin'] = 'admin/admin';
+$route['admin/users'] = 'admin/user';
 $route['admin/profile/edit'] = 'admin/admin/ubah_profile';
 $route['admin/kost/all'] = 'admin/kost';
 $route['admin/pesan/all'] = 'admin/pesan';

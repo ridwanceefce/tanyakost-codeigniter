@@ -1,5 +1,7 @@
 # Petunjuk Penggunaan Repo Remote
 
+[![Join the chat at https://gitter.im/achmiral/tanyakost-codeigniter](https://badges.gitter.im/achmiral/tanyakost-codeigniter.svg)](https://gitter.im/achmiral/tanyakost-codeigniter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 * Fork dulu repository [tanyakost-codeigniter](https://bitbucket.org/achmiral/tanyakost-codeigniter), dengan cara mengklik [fork](https://bitbucket.org/achmiral/tanyakost-codeigniter/fork) pada sidebar bitbucket.
 * Kemudian buka repository hasil fork tadi, kemudian di clone, dengan cara mengklik Clone pada sidebar, kemudian pastekan di cmd atau di terminal.
 

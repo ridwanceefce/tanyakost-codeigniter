@@ -97,30 +97,10 @@
         </div>
       </div> <!-- /.container-fluid -->
 
-      <!-- footer -->
-      <div class="container-fluid">
-        <footer class="row" id="footer-main">
-          <!-- <div class="container-fluid"> -->
-            <!-- <hr class="hr-white"> -->
-            <div class="col-md-4">
-              <p class="copyright">&copy; 2016 tanyakost.com</p>
-            </div>
-            <div class="col-md-4 col-md-offset-4">
-              <nav class="hidden-xs">
-                <a href="#"><i class="fa fa-facebook-square"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-              </nav>
-            </div>
-          <!-- </div> -->
-        </footer>
-      </div>
-      <!-- /footer -->
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- footer -->
+    <div class="container-fluid">
+      <?php $this->load->view('layouts/footer-main'); ?>
+    </div>
+    <!-- /footer -->
   </body>
 </html>

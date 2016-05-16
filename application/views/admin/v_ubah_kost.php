@@ -26,6 +26,12 @@
     <link href="<?= base_url('assets/font-awesome/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,500,700,300' rel='stylesheet' type='text/css'>
 
+    <!-- jQuery -->
+    <script src="<?= base_url('assets/js/jquery.js') ?>"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="<?= base_url('assets/js/bootstrap.min.js') ?>"></script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

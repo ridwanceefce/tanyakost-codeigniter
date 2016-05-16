@@ -17,10 +17,10 @@
                       <span><i class="fa fa-user" aria-hidden="true"></i>  Users</span><span class="badge pull-right">1</span>
                     </li>
                     <li>
-                      <span><i class="fa fa-home" aria-hidden="true"></i> Kosts</span><span class="badge pull-right">1</span>
+                      <a href="<?= base_url('admin/kost/all') ?>"><span><i class="fa fa-home" aria-hidden="true"></i> Kosts</span><span class="badge pull-right">1</span></a>
                     </li>
                     <li>
-                      <span><i class="fa fa-envelope" aria-hidden="true"></i> Pesan</span><span class="badge pull-right">10</span>
+                      <a href="<?= base_url('admin/pesan/all') ?>"><span><i class="fa fa-envelope" aria-hidden="true"></i> Pesan</span><span class="badge pull-right">10</span></a>
                     </li>
                   </ul>
                 </div> <!-- /.bio-control -->

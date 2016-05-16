@@ -19,6 +19,7 @@
 
     <!-- Custom CSS -->
     <link href="<?= base_url('assets/css/user-kost-input.css') ?>" rel="stylesheet">
+    <link rel="stylesheet" href="<?= base_url('assets/css/admin-bio.css') ?>"> 
     <link rel="stylesheet" href="<?= base_url('assets/css/navbar-main.css') ?>">
     <link href="<?= base_url('assets/css/normalize.css') ?>" rel="stylesheet">
 
@@ -53,7 +54,7 @@
           </div>
           <div class="col-md-10 col-sm-8 pd-rl-5" >
             <div class="col-md-12" id="profil-konten">
-              <h3><i class="fa fa-list-alt" aria-hidden="true"></i> Form tambah kost</h3>
+              <h3><i class="fa fa-list-alt" aria-hidden="true"></i> Form Ubah Kost</h3>
               <hr class="hr-primary">
               <form>
                 <div class="row">
@@ -108,33 +109,30 @@
                         <span class="help-block"><i class="fa fa-question-circle" aria-hidden="true"></i> contoh: Jl. Nusa Indah, No. 4, Condongcatur</span>
                       </div> 
                     </div> <!-- /#user-alamat -->
-                    <div id="user-contact" class="panel panel-default">
+                    <div id="kost-deskripsi" class="panel panel-default">
                       <div class="panel-heading">
-                        <h4>Fasilitas kost</h4>
+                        <h4>Deskripsi Kost</h4>
                       </div>
                       <div class="panel-body">
-                        <div class="checkbox">
-                          <label><input type="checkbox" value="">Kamar mandi dalam</label>
-                        </div>
-                        <div class="checkbox">
-                          <label><input type="checkbox">Kamar mandi luar</label>
-                        </div>
-                        <div class="checkbox">
-                          <label><input type="checkbox">AC</label>
-                        </div>
-                        <div class="checkbox">
-                          <label><input type="checkbox">Wifi</label>
-                        </div>
-                        <div class="checkbox">
-                          <label><input type="checkbox">Lemari</label>
-                        </div>
-                        <div class="checkbox">
-                          <label><input type="checkbox">Meja &amp; kursi</label>
-                        </div>
-                        <div class="checkbox">
-                          <label><input type="checkbox">Tempat tidur</label>
-                        </div>
+                      <textarea name="deskripsi-kost" id="deskripsi-kost" rows="10" class="form-control"></textarea>
+                      <span class="help-block">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i> 
+                        Isikan deskripsi lengkap kost (contoh: peraturan, kondisi lingkungan sekitar kost)
+                      </span>
                       </div>
+                    </div>
+                    <div id="user-contact" class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4>Fasilitas kost</h4>
+                        </div>
+                        <div class="panel-body">
+                          <textarea name="fasilitas" id="fasilitas" class="form-control"
+                           placeholder="contoh: kamar mandi dalam, lemari, tempat tidur"></textarea>
+                          <span class="help-block">
+                            <i class="fa fa-question-circle" aria-hidden="true"></i> 
+                            Dipisahkan dengan koma ( , )
+                          </span>
+                        </div>
                     </div> <!-- /#user-contact -->
                   </div>
                   <div class="col-md-4">

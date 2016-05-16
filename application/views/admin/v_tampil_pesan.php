@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <?php $this->load->view('layouts/favico.php') ?>
+    <?php $this->load->view('layouts/favico') ?>
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -20,7 +20,8 @@
 
     <!-- Custom CSS -->
     <link href="<?= base_url('assets/css/admin-profil.css') ?>" rel="stylesheet">
-    <link href="<?= base_url('assets/css/admin-bio.css') ?>" rel="stylesheet">
+    <link rel="stylesheet" href="<?= base_url('assets/css/admin-bio.css') ?>"> 
+    <!-- load style untuk bagian admin-bio -->
     <link rel="stylesheet" href="<?= base_url('assets/css/navbar-main.css') ?>">
     <link href="<?= base_url('assets/css/normalize.css') ?>" rel="stylesheet">
 
@@ -44,7 +45,7 @@
   <body>
 
     <header class="container-fluid">
-      <?php $this->load->view('layouts/navbar-main') ?>
+       <?php $this->load->view('layouts/navbar-main') ?>
     </header>
 
       <div class="container-fluid">
@@ -56,42 +57,34 @@
 
             <div class="col-md-10 col-sm-8 pd-rl-5" >
               <div class="col-md-12" id="profil-konten">
-              
-                <div class="konten-user">
+
+                <div class="konten-pesan clearfix">
                   <div class="konten-head clearfix">
-                    <h3 class="clearfix"><i class="fa fa-user" aria-hidden="true"></i>Semua User</h3>
+                    <h3><i class="fa fa-envelope" aria-hidden="true"></i> Semua pesan</h3>
                   </div>
                   <hr class="hr-primary mg-tb-10">
-                  <div id="users-list" class="clearfix">
+                  <div id="pesan-list">
                     <div class="table-responsive">
-                      <table class="table table-hover">
+                      <table class="table">
                         <thead>
                           <tr>
                             <th width="5%">#</th>
-                            <th width="25%">Nama</th>
-                            <th width="30%">Email</th>
-                            <th width="">Tanggal Registrasi</th>
-                            <th>Action</th>
+                            <th width="20%">Pengirim</th>
+                            <th width="20">Penerima</th>
+                            <th width="30%">Isi pesan</th>
+                            <th width="20%">Waktu</th>
+                            <th width="10%"></th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="table-hover">
                           <tr>
                             <td>1</td>
-                            <td>Miral Achmed</td>
-                            <td>miral.achmed@gmail.com</td>
-                            <td>05-12-2016 15:00:45</td>
+                            <td>sdf</td>
+                            <td>sdf</td>
+                            <td>sfads</td>
+                            <td>besok</td>
                             <td>
-                              <a href="admin-user" class="btn btn-primary btn-xs">detail</a>
-                              <a href="#" class="btn btn-danger btn-xs">hapus</a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>1</td>
-                            <td>Miral Achmed</td>
-                            <td>miral.achmed@gmail.com</td>
-                            <td>05-12-2016 15:00:45</td>
-                            <td>
-                              <a href="admin-user" class="btn btn-primary btn-xs">detail</a>
+                              <a href="<?= base_url('admin/pesan/baca') ?>" class="btn btn-primary btn-xs">baca</a>
                               <a href="#" class="btn btn-danger btn-xs">hapus</a>
                             </td>
                           </tr>
@@ -99,17 +92,17 @@
                       </table>
                     </div>
                   </div>
-                </div> <!-- /.konten-user -->
+                </div>
               </div>  <!-- /#profil-konten -->
             </div>
           </div> <!-- /#main-profil -->
         </div>
       </div> <!-- /.container-fluid -->
 
-      <!-- footer -->
-      <div class="container-fluid">
-        <?php $this->load->view('layouts/footer-main') ?>
-      </div>
-      <!-- /footer -->
+    <!-- footer -->
+    <div class="container-fluid">
+      <?php $this->load->view('layouts/footer-main'); ?>
+    </div>
+    <!-- /footer -->
   </body>
 </html>

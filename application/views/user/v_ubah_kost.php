@@ -56,7 +56,7 @@
             </div>
             <div class="col-md-10 col-sm-8 pd-rl-5" >
               <div class="col-md-12" id="profil-konten">
-                <h3><i class="fa fa-list-alt" aria-hidden="true"></i> Form ubah kost</h3>
+                <h3><i class="fa fa-list-alt" aria-hidden="true"></i> Form Ubah Kost</h3>
                 <hr class="hr-primary">
                 <form>
                   <div class="row">
@@ -111,7 +111,19 @@
                           <span class="help-block"><i class="fa fa-question-circle" aria-hidden="true"></i> contoh: Jl. Nusa Indah, No. 4, Condongcatur</span>
                         </div> 
                       </div> <!-- /#user-alamat -->
-                      <div id="user-contact" class="panel panel-default">
+                      <div id="kost-deskripsi" class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4>Deskripsi Kost</h4>
+                        </div>
+                        <div class="panel-body">
+                        <textarea name="deskripsi-kost" id="deskripsi-kost" rows="10" class="form-control"></textarea>
+                        <span class="help-block">
+                          <i class="fa fa-question-circle" aria-hidden="true"></i> 
+                          Isikan deskripsi lengkap kost (contoh: peraturan, kondisi lingkungan sekitar kost)
+                        </span>
+                        </div>
+                      </div>
+                      <div id="kost-fasilitas" class="panel panel-default">
                         <div class="panel-heading">
                           <h4>Fasilitas kost</h4>
                         </div>
@@ -123,7 +135,7 @@
                             Dipisahkan dengan koma ( , )
                           </span>
                         </div>
-                      </div> <!-- /#user-contact -->
+                      </div> <!-- /#kost-fasilitas -->
                     </div>
                     <div class="col-md-4">
                       <div class="panel panel-default">

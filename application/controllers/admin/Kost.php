@@ -14,10 +14,10 @@ class Kost extends CI_Controller {
     $data['judul'] = "Tanyakost.com - Semua Kost"; // Data yang tampil
     // di title page
 
-    $this->load->view('admin/v_tampil_kosts', $data);
+    $this->load->view('admin/v_tampil_kost', $data);
   }
 
-  public function edit_kost() {
+  public function ubah_kost() {
     $data['judul'] = "Tanyakost.com | Ubah kost";
     $this->load->view('admin/v_ubah_kost', $data);
   }

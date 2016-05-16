@@ -6,12 +6,12 @@ class Pesan extends CI_Controller {
   public function index() 
   {
     $data['judul'] = "Tanyakost.com | Tempat cari kost";
-    $this->load->view('admin/v_tampil_pesans', $data);
+    $this->load->view('admin/v_tampil_pesan', $data);
   }
 
-  public function edit_kost() {
+  public function baca_pesan() { // mestinya harus ada id pesan untuk query select ke database
     $data['judul'] = "Tanyakost.com | Tempat cari kost";
-    $this->load->view('admin/v_ubah_kost', $data);
+    $this->load->view('admin/v_baca_pesan', $data);
   }
 
 }

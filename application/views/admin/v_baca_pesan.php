@@ -51,13 +51,13 @@
         <div class="row">
           <div class="" id="main-profil">
             <div class="col-md-2 col-sm-4 pd-rl-5" >
-              <?php $this->load->view('user/layouts/user_bio') ?>
+              <?php $this->load->view('admin/layouts/admin_bio') ?>
             </div>
 
             <div class="col-md-10 col-sm-8 pd-rl-5" >
               <div class="col-md-12" id="profil-konten">
                 <div id="baca-pesan" class="col-md-12">
-                  <a href="<?= base_url('user/pesan/tampil') ?>" class="btn btn-danger mg-tb-10">Tampilkan semua pesan</a>
+                  <a href="<?= base_url('admin/pesan/tampil') ?>" class="btn btn-danger mg-tb-10">Tampilkan semua pesan</a>
                   <div class="pesan-item">
                     <div class="panel panel-default">
                       <div class="panel-heading">
@@ -68,6 +68,12 @@
                           <h5>Pengirim</h5>
                           <div class="well">
                             <p>budi@gmail.com</p>
+                          </div>
+                        </div>
+                        <div class="penerima">
+                          <h5>Penerima</h5>
+                          <div class="well">
+                            <p>badu@gmail.com</p>
                           </div>
                         </div>
                         <div id="waktu-kirim">

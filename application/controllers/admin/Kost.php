@@ -5,12 +5,20 @@ class Kost extends CI_Controller {
 
   public function index() 
   {
-    $data['judul'] = "Tanyakost.com | Tempat cari kost";
+    $this->load->model('kost_m');
+
+    $kosts = $this->kost_m->get_all_kost();
+
+    $data['kosts'] = $kosts;
+
+    $data['judul'] = "Tanyakost.com - Semua Kost"; // Data yang tampil
+    // di title page
+
     $this->load->view('admin/v_tampil_kosts', $data);
   }
 
   public function edit_kost() {
-    $data['judul'] = "Tanyakost.com | Tempat cari kost";
+    $data['judul'] = "Tanyakost.com | Ubah kost";
     $this->load->view('admin/v_ubah_kost', $data);
   }
 

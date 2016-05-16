@@ -11,10 +11,10 @@
                 <div class="bio-control">
                   <ul class="control">
                     <li class="active">
-                      <a href="<?= base_url('admin') ?>"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a>
+                      <a href="<?= base_url('admin/profil') ?>"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a>
                     </li>
                     <li>
-                      <a href=""><span><i class="fa fa-user" aria-hidden="true"></i>  Users</span><span class="badge pull-right">1</span></a>
+                      <a href="<?= base_url('admin/user') ?>"><span><i class="fa fa-user" aria-hidden="true"></i>  Users</span><span class="badge pull-right">1</span></a>
                     </li>
                     <li>
                       <a href="<?= base_url('admin/kost/all') ?>"><span><i class="fa fa-home" aria-hidden="true"></i> Kosts</span><span class="badge pull-right">1</span></a>
@@ -28,7 +28,7 @@
                 <div class="settings">
                   <h3>Pengaturan</h3>
                   <ul class="profil-setting">
-                    <li><a href="<?= base_url('admin/profile/edit') ?>"><span><i class="fa fa-cogs" aria-hidden="true"></i>Ubah profil</span></a></li>
+                    <li><a href="<?= base_url('admin/profil/ubah') ?>"><span><i class="fa fa-cogs" aria-hidden="true"></i>Ubah profil</span></a></li>
                     <li><span><i class="fa fa-sign-out" aria-hidden="true"></i>Log out</span></li>
                   </ul>
                 </div>

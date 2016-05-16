@@ -53,6 +53,12 @@
     .control li i {
       margin-right: .4em;
     }
+    .control li a {
+      color: #333;
+    }
+    .control li a:hover {
+      text-decoration: none;
+    }
     .settings h3 {
       font-size: 1.3em;
       text-align: center;

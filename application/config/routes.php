@@ -50,15 +50,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'home';
+
 $route['login-user'] = 'user/login'; // routing url /login-user ke constroller login_user pada folder user
 $route['login-admin'] = 'admin/login'; // routing url /login-admin ke controller login_admin pada folder admin
 $route['registrasi'] = 'user/registrasi'; // routing url /registrasi ke controller Registrasi.php pada folder user
-$route['user'] = 'user/user';
-$route['user/kosts'] = 'user/kost';
-$route['admin'] = 'admin/admin';
-$route['admin/users'] = 'admin/user';
-$route['admin/profile/edit'] = 'admin/admin/ubah_profile';
-$route['admin/kost/all'] = 'admin/kost';
-$route['admin/pesan/all'] = 'admin/pesan';
+
+// Routes untuk user
+$route['user/profil'] = 'user/dashboard'; // routing url tampil dashboard user
+$route['user/profil/ubah'] = 'user/dashboard/ubah_profil'; // routing url tampil ubah profil user
+$route['user/kost/tampil'] = 'user/kost'; // routing url tampil semua kost di user
+$route['user/kost/tambah'] = 'user/kost/input_kost'; // routing url untuk tambah kost
+$route['user/kost/ubah'] = 'user/kost/ubah_kost'; // routing url untuk tampil ubah kost user
+$route['user/pesan/tampil'] = 'user/pesan'; // routing url untuk tampil semua pesan
+$route['user/pesan/baca'] = 'user/pesan/baca_pesan'; // routing url untuk tampil baca pesan dengan id
+
+
+// Routes untuk admin
+$route['admin/profil'] = 'admin/dashboard'; // routing url tampil dashboard user
+$route['admin/users'] = 'admin/user'; // routing url tampil daftar user di admin
+$route['admin/profil/ubah'] = 'admin/dashboard/ubah_profile'; // routing url ubah data profil admin
+$route['admin/kost/all'] = 'admin/kost'; // routing url untuk tampil daftar kost di admin
+$route['admin/pesan/all'] = 'admin/pesan'; // routing url untuk tampil daftar pesan di admin
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

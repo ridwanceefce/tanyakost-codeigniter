@@ -68,7 +68,7 @@
                           <div class="row kost-label">
                             <!-- <p class=""><b>Rp.</b> 300k / bulan</p> -->
                             <!-- <p class="since">1 minggu yang lalu</p> -->
-                            <a href="form-ubah-kost.html" class="btn btn-primary btn-sm">Ubah</a>
+                            <a href="<?= base_url('user/kost/ubah') ?>" class="btn btn-primary btn-sm">Ubah</a>
                             <a href="#" class="btn btn-danger btn-sm">Hapus</a>
                           </div>  <!-- /.kost-label -->
                         </div>
@@ -99,7 +99,7 @@
                           <td>sfads</td>
                           <td class="hidden-xs">besok</td>
                           <td>
-                            <a href="#" class="btn btn-primary btn-xs">baca</a>
+                            <a href="<?= base_url('user/pesan/baca') ?>" class="btn btn-primary btn-xs">baca</a>
                             <a href="#" class="btn btn-danger btn-xs">hapus</a>
                           </td>
                         </tr>
@@ -109,7 +109,7 @@
                           <td>sfads</td>
                           <td class="hidden-xs">sdfa</td>
                           <td>
-                            <a href="#" class="btn btn-primary btn-xs">baca</a>
+                            <a href="<?= base_url('user/pesan/baca') ?>" class="btn btn-primary btn-xs">baca</a>
                             <a href="#" class="btn btn-danger btn-xs">hapus</a>
                           </td>
                         </tr>

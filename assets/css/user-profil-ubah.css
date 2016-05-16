@@ -9,196 +9,11 @@ body {
   /*padding-bottom: 60px;*/
 }
 
-.pd-rl-5 {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.pd-rl-10 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.mg-tb-5 {
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-.mg-b-1em {
-  margin-bottom: 1em;
-}
-.pd-r-5 {
-  padding-right: 5px;
-}
-.pd-l-5 {
-  padding-left: 5px;
-}
-.mg-tb-10 {
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-.mg-tb-5 {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.mg-rl-5 {
-  margin-right: 5px;
-  margin-left: 5px;
-}
-.pd-l-10 {
-  padding-left: 10px;
-}
-.pd-r-10 {
-  padding-right: 10px;
-}
-.hr-primary {
-  border-color: #e74f36;
-}
-.hr-white {
-  border-color: #fff;
-}
-.box-green {
-  background-color: green;
-}
 
-#navbar-main {
-  background: #e74f36;
-  border-color: #e74f36;
-  border-radius: 0;
-  margin-bottom: 10px;
-}
-
-.navbar-brand {
-  padding: 0;
-}
-
-.logo-md {
-  height: 50px;
-  padding: 5px;
-  margin-left: 10px;
-}
-
-.logo-xs {
-  height: 50px;
-  padding: 5px;
-  margin-left: 10px;
-}
-
-#searchInput {
-  margin-right: 5px;
-  display: inline-block;
-}
-
-.nav-form {
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-#nav-welcome {
-  margin-top: 0px;
-}
-
-#nav-welcome li {
-  text-align: center;
-}
-#nav-welcome .active a {
-  background-color: #d4523c !important;
-  font-weight: bold;
-}
-#nav-welcome li a {
-  color: #fff;
-  text-transform: uppercase;
-}
-
-#hamburger:hover, #hamburger {
-  background-color: #d4523c;
-  border-color: #fff;
-}
-
-#hamburger span {
-  background-color: #fff;
-}
 #main-profil {
   padding-left: 5px;
   padding-right: 5px;
 }
-#profil-bio {
-  background-color: #fff;
-  border-radius: 5px;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-bottom: 1em;
-}
-    #profil-bio img {
-      height: 4em;
-      margin-left: auto;
-      margin-right: auto;
-      /*float: left;*/
-    }
-    #profil-bio .user-name-status {
-      text-align: center;
-    }
-    .user-name {
-      margin-top: .5em;
-      margin-bottom: .5em;
-      font-size: 1.6rem;
-      text-transform: uppercase;
-      color: #e74f36;
-    }
-    .user-status {
-      font-size: 1.3rem;
-      margin-bottom: .5em;
-    }
-    .bio-control {
-      text-align: center;
-    }
-    .btn-tambah, .btn-tambah:active, .btn-tambah:focus {
-      text-transform: uppercase;
-      background-color: #e74f36;
-      color: #fff;
-      margin-bottom: 1em;
-    }
-    .btn-tambah:hover {
-      color: #e74f36;
-      background-color: #fff;
-      border: 1px solid #e74f36;
-    }
-    .control {
-      padding-left: .6em;
-      text-align: left;
-    }
-    .control .active {
-      color: #e74f36;
-    }
-    .control li {
-      list-style-type: none;
-      margin-bottom: .4em;
-    }
-    .control li i {
-      margin-right: .4em;
-    }
-    .settings h3 {
-      font-size: 1.3em;
-      text-align: center;
-      text-transform: uppercase;
-      color: #e74f36;
-    }
-    .profil-setting {
-      padding-left: .6em;
-      margin-bottom: 0px;
-    }
-    .profil-setting li {
-      list-style-type: none;
-      text-align: left;
-      margin-bottom: .4em;
-    }
-    .profil-setting li a {
-      color: #333;
-    }
-    .profil-setting li a:hover {
-      text-decoration: none;
-    }
-    .profil-setting li i {
-      margin-right: .4em;
-    }
-
 #profil-konten {
   background-color: #fff;
   border-radius: 5px;
@@ -221,8 +36,8 @@ body {
     font-size: 1.6rem;
     color: #e74f36;
   }
-#user-alamat select {
-  margin-bottom: 1em;
+#email-user {
+  margin-bottom: 10px;
 }
 .file-upload {
   position: relative;

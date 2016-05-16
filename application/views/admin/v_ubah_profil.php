@@ -20,12 +20,20 @@
     <!-- Custom CSS -->
     <link href="<?= base_url('assets/css/user-profil-ubah.css') ?>" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('assets/css/navbar-main.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/admin-bio.css') ?>"> 
     <link href="<?= base_url('assets/css/normalize.css') ?>" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="<?= base_url('assets/font-awesome/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,500,700,300' rel='stylesheet' type='text/css'>
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery -->
+    <script src="<?= base_url('assets/js/jquery.js') ?>"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="<?= base_url('assets/js/bootstrap.min.js') ?>"></script>
+    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -60,40 +68,22 @@
                           <label>Nama Lengkap</label>
                           <input type="text" name="user-name" name="user-name" id="user-name" class="form-control">
                           <span id="help-nama-user" class="help-block"><i class="fa fa-question-circle" aria-hidden="true"></i> nama lengkap akan ditampilkan pada detail iklan kost.</span>
-                        </div>
-                      </div> <!-- /#user-pribadi -->
-                      <div id="user-alamat" class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4>Alamat lengkap</h4>
-                        </div>
-                        <div class="panel-body">
-                          <label>Provinsi</label>
-                          <select name="provinsi" id="provinsi-user" class="form-control">
-                            <option value="">- Pilih Provinsi -</option>
-                          </select>
-                          <label>Kabupaten / Kota</label>
-                          <select name="kabupaten-user" id="kabupaten-user" class="form-control">
-                            <option value="">- Pilih Kabupaten / Kota -</option>
-                          </select>
-                          <label>Kecamatan</label>
-                          <select name="kecamatan-user" id="kecamatan-user" class="form-control">
-                            <option value="">- Pilih Kecamatan -</option>
-                          </select>
-                          <label>Jalan</label>
-                          <input type="text" name="jalan-user" class="form-control" placeholder="nama jalan lengkap">
-                          <span class="help-block"><i class="fa fa-question-circle" aria-hidden="true"></i> contoh: Jl. Nusa Indah, No. 4, Condongcatur</span>
-                        </div> 
-                      </div> <!-- /#user-alamat -->
-                      <div id="user-contact" class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4>Data Kontak</h4>
-                        </div>
-                        <div class="panel-body">
+
                           <label>Nomor Telepon</label>
                           <input type="text" name="telp-user" id="telp-user" class="form-control">
                           <span id="help-telp-user" class="help-block"><i class="fa fa-question-circle" aria-hidden="true"></i> nomor telepon akan ditampilkan pada detail iklan kost.</span>
+                        </div>
+                      </div> <!-- /#user-pribadi -->
+                      <div id="user-contact" class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4>Data Akun</h4>
+                        </div>
+                        <div class="panel-body">
                           <label>Alamat email</label>
-                          <input type="text" name="email-user" id="email-user" class="form-control">
+                          <input type="email" name="email-user" id="email-user" class="form-control">
+
+                          <label>Password</label>
+                          <input type="password" name="password-user" id="password-user" class="form-control">
                         </div>
                       </div> <!-- /#user-contact -->
                     </div>
@@ -158,11 +148,5 @@
         </footer>
       </div>
       <!-- /footer -->
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

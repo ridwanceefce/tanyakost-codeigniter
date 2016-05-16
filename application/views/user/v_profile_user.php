@@ -86,20 +86,20 @@
                 </div>
                 <hr class="hr-primary mg-tb-10">
                 <div id="kosts-list" class="clearfix">
-                  <div class="pd-rl-5 kost-item col-md-3 thumbnail">
-                  <a href="kosts-show.html">
-                    <img src="<?= base_url('assets/images/kosts/sampel-kost-1.jpg') ?>" class="image-responsive" alt="">
-                    <div class="box">
-                      <div class="col-md-12">
-                        <div class="row kost-label">
-                          <!-- <p class=""><b>Rp.</b> 300k / bulan</p> -->
-                          <!-- <p class="since">1 minggu yang lalu</p> -->
-                          <a href="form-ubah-kost.html" class="btn btn-primary btn-sm">Ubah</a>
-                          <a href="#" class="btn btn-danger btn-sm">Hapus</a>
-                        </div>  <!-- /.kost-label -->
-                      </div>
-                    </div> <!-- /.box -->
-                  </a>
+                  <div class="kost-item col-md-3 thumbnail">
+                    <a href="kosts-show.html">
+                      <img src="<?= base_url('assets/images/kosts/sampel-kost-1.jpg') ?>" class="image-responsive" alt="">
+                      <div class="box">
+                        <div class="col-md-12">
+                          <div class="row kost-label">
+                            <!-- <p class=""><b>Rp.</b> 300k / bulan</p> -->
+                            <!-- <p class="since">1 minggu yang lalu</p> -->
+                            <a href="form-ubah-kost.html" class="btn btn-primary btn-sm">Ubah</a>
+                            <a href="#" class="btn btn-danger btn-sm">Hapus</a>
+                          </div>  <!-- /.kost-label -->
+                        </div>
+                      </div> <!-- /.box -->
+                    </a>
                   </div> <!-- /.kost-item -->
                 </div> <!-- /#kost-list -->
                 <div class="konten-head">

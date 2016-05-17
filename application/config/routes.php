@@ -61,6 +61,7 @@ $route['registrasi'] = 'user/registrasi'; // routing url /registrasi ke controll
 $route['user/(:num)'] = 'user/dashboard'; // routing url tampil dashboard user
 $route['user/(:num)/ubah'] = 'user/dashboard/ubah_profil'; // routing url tampil ubah profil user
 $route['user/(:num)/kost'] = 'user/kost'; // routing url tampil semua kost di user
+$route['user/(:num)/kost/(:num)'] = 'user/kost/tampil_kost_detail';
 $route['user/(:num)/kost/tambah'] = 'user/kost/input_kost'; // routing url untuk tambah kost
 $route['user/(:num)/kost/(:num)/ubah'] = 'user/kost/ubah_kost'; // routing url untuk tampil ubah kost user
 $route['user/(:num)/pesan'] = 'user/pesan'; // routing url untuk tampil semua pesan dengan id 

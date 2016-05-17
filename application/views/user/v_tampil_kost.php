@@ -64,39 +64,24 @@
                   <hr class="hr-primary mg-tb-10">
                   <div id="kosts-list" class="col-md-12">
                     <div class="row">
+                    <?php foreach($kost as $k): ?>
                       <div class="col-md-3 col-sm-6 col-xs-12 pd-rl-5 mg-tb-10">
                         <div class="kost-item thumbnail">
-                          <p class="mg-tb-10">Kost Melati</p>
+                          <p class="mg-tb-10"><?= $k->nama_kost ?></p>
                           <img src="<?= base_url('assets/images/kosts/sampel-kost-1.jpg') ?>" class="image-responsive" alt="">
                           <div class="box">
                             <div class="col-md-12">
                               <div class="row kost-label">
                                 <!-- <p class=""><b>Rp.</b> 300k / bulan</p> -->
                                 <!-- <p class="since">1 minggu yang lalu</p> -->
-                                <a href="<?= base_url('user/kost/ubah') ?>" class="btn btn-primary btn-xs">Ubah</a>
+                                <a href="<?= base_url('user/'.$user['id_user'].'/kost/'.$k->id_kost.'/ubah') ?>" class="btn btn-primary btn-xs">Ubah</a>
                                 <a href="#" class="btn btn-danger btn-xs">Hapus</a>
                               </div>  <!-- /.kost-label -->
                             </div>
                           </div> <!-- /.box -->
                         </div> <!-- /.kost-item -->
                       </div>
-
-                      <div class="col-md-3 col-sm-6 col-xs-12 pd-rl-5 mg-tb-10">
-                        <div class="kost-item thumbnail">
-                          <p class="mg-tb-10">Kost Condongcatur</p>
-                          <img src="<?= base_url('assets/images/kosts/sampel-kost-1.jpg') ?>" class="image-responsive" alt="">
-                          <div class="box">
-                            <div class="col-md-12">
-                              <div class="row kost-label">
-                                <!-- <p class=""><b>Rp.</b> 300k / bulan</p> -->
-                                <!-- <p class="since">1 minggu yang lalu</p> -->
-                                <a href="<?= base_url('user/kost/ubah') ?>" class="btn btn-primary btn-xs">Ubah</a>
-                                <a href="#" class="btn btn-danger btn-xs">Hapus</a>
-                              </div>  <!-- /.kost-label -->
-                            </div>
-                          </div> <!-- /.box -->
-                        </div> <!-- /.kost-item -->
-                      </div>
+                    <?php endforeach;  ?>
                     </div>
                   </div> <!-- /#kost-list -->
                 </div> <!-- /.konten-kost -->

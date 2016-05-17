@@ -60,21 +60,21 @@
                 </div>
                 <hr class="hr-primary mg-tb-10">
                 <div id="kosts-list" class="clearfix">
-                  <div class="kost-item col-md-3 thumbnail">
-                    <a href="kosts-show.html">
-                      <img src="<?= base_url('assets/images/kosts/sampel-kost-1.jpg') ?>" class="image-responsive" alt="">
-                      <div class="box">
-                        <div class="col-md-12">
-                          <div class="row kost-label">
-                            <!-- <p class=""><b>Rp.</b> 300k / bulan</p> -->
-                            <!-- <p class="since">1 minggu yang lalu</p> -->
-                            <a href="<?= base_url('user/kost/ubah') ?>" class="btn btn-primary btn-sm">Ubah</a>
-                            <a href="#" class="btn btn-danger btn-sm">Hapus</a>
-                          </div>  <!-- /.kost-label -->
-                        </div>
-                      </div> <!-- /.box -->
-                    </a>
-                  </div> <!-- /.kost-item -->
+                  <?php foreach($kost as $k): ?>
+                    <div class="kost-item col-md-3 thumbnail">
+                      <a href="kosts-show.html">
+                        <img src="<?= base_url('assets/images/kosts/sampel-kost-1.jpg') ?>" class="image-responsive" alt="">
+                        <div class="box">
+                          <div class="col-md-12">
+                            <div class="row kost-label">
+                              <a href="<?= base_url('user/'.$user['id_user'].'/kost/'.$k->id_kost.'/ubah') ?>" class="btn btn-primary btn-sm">Ubah</a>
+                              <a href="#" class="btn btn-danger btn-sm">Hapus</a>
+                            </div>  <!-- /.kost-label -->
+                          </div>
+                        </div> <!-- /.box -->
+                      </a>
+                    </div> <!-- /.kost-item -->
+                  <?php endforeach; ?>
                 </div> <!-- /#kost-list -->
                 <div class="konten-head">
                   <h3><i class="fa fa-envelope" aria-hidden="true"></i> Pesan saya</h3>
@@ -100,7 +100,7 @@
                           <td><?= word_limiter($p->isi, 5) ?></td>
                           <td class="hidden-xs">besok</td>
                           <td>
-                            <a href="<?= base_url('user/pesan/baca/'.$user['id_user'].'/'.$p->id) ?>" class="btn btn-primary btn-xs">baca</a>
+                            <a href="<?= base_url('user/'.$user['id_user'].'/pesan/'.$p->id) ?>" class="btn btn-primary btn-xs">baca</a>
                             <a href="#" class="btn btn-danger btn-xs">hapus</a>
                           </td>
                         </tr>

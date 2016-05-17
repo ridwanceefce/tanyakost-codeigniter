@@ -7,6 +7,13 @@ class Pesan_m extends CI_Model {
     return $pesan;
   }
 
+  public function baca_pesan($id_pesan) {
+    $this->db->select('*');
+    $this->db->from('pesan');
+    $this->db->where('id', $id_pesan);
+    $hasil = $this->db->get();
+    return $hasil;
+  }
 }
 
 /* End of file Pesan_m.php */

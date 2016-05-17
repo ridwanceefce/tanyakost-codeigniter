@@ -61,31 +61,25 @@
                   <div class="pesan-item">
                     <div class="panel panel-default">
                       <div class="panel-heading">
-                        <h3>Pesan #12</h3>
+                        <h3>Pesan #<?= $pesan['id'] ?></div></h3>
                       </div>
                       <div class="panel-body">
                         <div id="pengirim">
                           <h5>Pengirim</h5>
                           <div class="well">
-                            <p>budi@gmail.com</p>
+                            <p><?= $pesan['pengirim'] ?></p>
                           </div>
                         </div>
                         <div id="waktu-kirim">
                           <h5>Waktu Pengiriman</h5>
                           <div class="well">
-                            <p>Senin, 12 Mei 2015</p>
+                            <p><?= $pesan['waktu_kirim'] ?></p>
                           </div>
                         </div>
                         <div id="isi" class="mg-tb-10">
                           <h5>Isi pesan</h5>
                           <div class="well">
-                            <p>
-                              Umami godard quinoa irony. Forage bicycle rights put a bird on it drinking vinegar pickled letterpress. Portland small batch tattooed kickstarter etsy. Skateboard selvage stumptown, kitsch yuccie green juice VHS man braid vegan vice asymmetrical dreamcatcher leggings. Pinterest blue bottle cronut health goth, venmo swag intelligentsia portland man bun messenger bag fanny pack iPhone. Gluten-free mumblecore blue bottle, ramps kale chips meggings shabby chic. Waistcoat tousled literally cray lo-fi.
-                            </p>
-                            <br>
-                            <p>
-                              Franzen kombucha freegan williamsburg neutra migas, meditation knausgaard squid ugh tote bag. Selfies cred taxidermy tilde hammock, seitan ramps mlkshk lumbersexual celiac normcore mumblecore church-key kogi. Four loko retro literally, pitchfork butcher kickstarter flannel dreamcatcher. Synth ennui listicle, 3 wolf moon man braid fashion axe cred chillwave swag aesthetic cold-pressed tilde food truck shoreditch etsy. Yuccie selfies franzen celiac iPhone, mlkshk synth occupy listicle echo park YOLO food truck brooklyn kitsch cray. Polaroid gastropub etsy PBR&B, photo booth quinoa bitters lo-fi distillery pabst ramps taxidermy deep v actually. Locavore mlkshk four loko jean shorts offal ramps small batch, helvetica chambray post-ironic.
-                            </p>
+                            <p><?= $pesan['isi'] ?></p>
                           </div>
                         </div><!--  /#isi -->
                       </div><!--  /.panel-body -->

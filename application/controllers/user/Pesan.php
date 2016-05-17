@@ -18,6 +18,11 @@ class Pesan extends CI_Controller {
   }
 
   public function baca_pesan() { // mestinya harus ada id pesan untuk query select ke database
+    $this->load->model('pesan_m'); // load model pesan_m
+    $id_pesan = $this->uri->segment(4); // tangkap id pesan untuk query ke database
+    $pesan = $this->pesan_m->baca_pesan($id_pesan)->row_array();
+
+    $data['pesan'] = $pesan;
     $data['judul'] = "Tanyakost.com | Tempat cari kost";
     $this->load->view('user/v_baca_pesan', $data);
   }

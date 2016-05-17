@@ -61,7 +61,7 @@
                   <div class="pesan-item">
                     <div class="panel panel-default">
                       <div class="panel-heading">
-                        <h3>Pesan #<?= $pesan['id'] ?></div></h3>
+                        <h3>Pesan #<?= $pesan['id'] ?></h3>
                       </div>
                       <div class="panel-body">
                         <div id="pengirim">
@@ -87,7 +87,6 @@
                         <button class="btn btn-success">Balas</button>
                         <button class="btn btn-danger">Hapus</button>
                       </div>
-
                     </div>
                   </div> <!-- /.pesan-item -->
                 </div>

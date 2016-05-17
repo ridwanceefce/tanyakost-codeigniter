@@ -7,6 +7,14 @@ class Pesan_m extends CI_Model {
     return $pesan;
   }
 
+  public function ambil_pesan_user($id_user) {
+    $this->db->select('*');
+    $this->db->from('pesan');
+    $this->db->where('id_user', $id_user);
+    $hasil = $this->db->get();
+    return $hasil->result(); // ada kemungkinan data pesan lebih dari satu
+  }
+
   public function baca_pesan($id_pesan) {
     $this->db->select('*');
     $this->db->from('pesan');

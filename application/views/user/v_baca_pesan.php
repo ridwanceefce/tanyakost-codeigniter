@@ -57,7 +57,7 @@
             <div class="col-md-10 col-sm-8 pd-rl-5" >
               <div class="col-md-12" id="profil-konten">
                 <div id="baca-pesan" class="col-md-12">
-                  <a href="<?= base_url('user/pesan/tampil') ?>" class="btn btn-danger mg-tb-10">Tampilkan semua pesan</a>
+                  <a href="<?= base_url('user/pesan/tampil/'.$user['id_user']) ?>" class="btn btn-danger mg-tb-10">Tampilkan semua pesan</a>
                   <div class="pesan-item">
                     <div class="panel panel-default">
                       <div class="panel-heading">

@@ -93,26 +93,19 @@
                         </tr>
                       </thead>
                       <tbody>
+                      <?php foreach($pesan as $p): ?>
                         <tr>
-                          <td>1</td>
-                          <td class="hidden-xs">sdf</td>
-                          <td>sfads</td>
+                          <td><?= $no ?></td>
+                          <td class="hidden-xs"><?= $p->pengirim ?></td>
+                          <td><?= word_limiter($p->isi, 5) ?></td>
                           <td class="hidden-xs">besok</td>
                           <td>
-                            <a href="<?= base_url('user/pesan/baca') ?>" class="btn btn-primary btn-xs">baca</a>
+                            <a href="<?= base_url('user/pesan/baca/'.$user['id_user'].'/'.$p->id) ?>" class="btn btn-primary btn-xs">baca</a>
                             <a href="#" class="btn btn-danger btn-xs">hapus</a>
                           </td>
                         </tr>
-                        <tr>
-                          <td>2</td>
-                          <td class="hidden-xs">sdf</td>
-                          <td>sfads</td>
-                          <td class="hidden-xs">sdfa</td>
-                          <td>
-                            <a href="<?= base_url('user/pesan/baca') ?>" class="btn btn-primary btn-xs">baca</a>
-                            <a href="#" class="btn btn-danger btn-xs">hapus</a>
-                          </td>
-                        </tr>
+                      <?php $no++ ?>
+                      <?php endforeach; ?>
                       </tbody>
                     </table>
                   </div>

@@ -77,7 +77,7 @@
                           <td><?= word_limiter($p->isi, 5) ?></td>
                           <td class="hidden-xs"><?= $p->waktu_kirim ?></td>
                           <td>
-                            <a href="<?= base_url('user/pesan/baca/'.$user['id_user'].'/'.$p->id) ?>" class="btn btn-primary btn-xs">Baca</a>
+                            <a href="<?= base_url('user/'.$user['id_user'].'/pesan/'.$p->id) ?>" class="btn btn-primary btn-xs">Baca</a>
                             <a class="btn btn-danger btn-xs">Hapus</a>
                           </td>
                         </tr>

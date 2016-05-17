@@ -31,7 +31,7 @@ class Dashboard extends CI_Controller {
   }
 
   public function ubah_profil() {
-    $user_id = $this->uri->segment(3);
+    $user_id = $this->uri->segment(2);
     
     $user = $this->user_m->ambil_user($user_id); // ambil data user dengan id $user_id dengan tipe data array
     $data['user'] = $user;

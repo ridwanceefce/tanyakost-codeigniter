@@ -59,12 +59,12 @@ $route['registrasi'] = 'user/registrasi'; // routing url /registrasi ke controll
 
 // Routes untuk user
 $route['user/(:num)'] = 'user/dashboard'; // routing url tampil dashboard user
-$route['user/ubah/(:num)'] = 'user/dashboard/ubah_profil'; // routing url tampil ubah profil user
-$route['user/kost/(:num)'] = 'user/kost'; // routing url tampil semua kost di user
-$route['user/kost/tambah'] = 'user/kost/input_kost'; // routing url untuk tambah kost
-$route['user/kost/ubah'] = 'user/kost/ubah_kost'; // routing url untuk tampil ubah kost user
-$route['user/pesan/tampil/(:num)'] = 'user/pesan'; // routing url untuk tampil semua pesan dengan id 
-$route['user/pesan/baca/(:num)/(:num)'] = 'user/pesan/baca_pesan'; // routing url untuk tampil baca pesan dengan id
+$route['user/(:num)/ubah'] = 'user/dashboard/ubah_profil'; // routing url tampil ubah profil user
+$route['user/(:num)/kost'] = 'user/kost'; // routing url tampil semua kost di user
+$route['user/(:num)/kost/tambah'] = 'user/kost/input_kost'; // routing url untuk tambah kost
+$route['user/(:num)/kost/(:num)/ubah'] = 'user/kost/ubah_kost'; // routing url untuk tampil ubah kost user
+$route['user/(:num)/pesan'] = 'user/pesan'; // routing url untuk tampil semua pesan dengan id 
+$route['user/(:num)/pesan/(:num)'] = 'user/pesan/baca_pesan'; // routing url untuk tampil baca pesan dengan id
 
 
 // Routes untuk admin

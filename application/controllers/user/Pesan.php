@@ -13,11 +13,11 @@ class Pesan extends CI_Controller {
 
   public function index() {
 
-    $id_user = $this->uri->segment(4);
+    $id_user = $this->uri->segment(2);
 
     $user = $this->user_m->ambil_user($id_user);
     $pesan = $this->pesan_m->ambil_semua_pesan()->result(); // menyimpan data yang di ambil dari function ambil_semua_pesan() dan di konversi ke object
-    
+
     $no = 1;
     $data['no'] = $no;
     $data['pesan'] = $pesan; // masukkan data $pesan ke dalam array data untuk view
@@ -27,8 +27,8 @@ class Pesan extends CI_Controller {
   }
 
   public function baca_pesan() { // mestinya harus ada id pesan untuk query select ke database
-    $id_pesan = $this->uri->segment(5);
-    $id_user = $this->uri->segment(4);
+    $id_pesan = $this->uri->segment(4);
+    $id_user = $this->uri->segment(2);
 
     $pesan = $this->pesan_m->baca_pesan($id_pesan)->row_array();
     $user = $this->user_m->ambil_user($id_user);

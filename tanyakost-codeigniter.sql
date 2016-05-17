@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 17, 2016 at 06:16 PM
+-- Generation Time: May 17, 2016 at 11:42 PM
 -- Server version: 5.5.49-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.16
 
@@ -7479,7 +7479,14 @@ CREATE TABLE IF NOT EXISTS `kost` (
   `tanggal_upload` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_kost`),
   KEY `id_user` (`id_user`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `kost`
+--
+
+INSERT INTO `kost` (`id_kost`, `id_user`, `nama_kost`, `jenis_kost`, `tipe_kost`, `photo`, `harga`, `deskrpsi`, `fasilitas`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `jalan`, `tanggal_upload`) VALUES
+(1, 14, 'Mawat', 'Putra', 'Bulanan', NULL, 100000, 'Humblebrag church-key four loko gochujang. Kale chips mlkshk try-hard cred, banjo wayfarers craft beer deep v vice scenester brooklyn four loko. Meggings distillery pop-up austin, biodiesel mustache brunch. Forage pinterest pitchfork mixtape, brooklyn helvetica bitters flexitarian tattooed chicharrones dreamcatcher waistcoat freegan. Normcore tofu roof party, health goth intelligentsia tote bag everyday carry small batch skateboard pabst beard. Microdosing deep v trust fund intelligentsia cred, pinterest beard direct trade cold-pressed church-key kitsch mixtape kickstarter selvage. Poutine viral chia intelligentsia schlitz offal.\r\n\r\nFingerstache farm-to-table portland organic butcher readymade, listicle hella kogi iPhone kitsch fixie polaroid. Ramps chillwave chicharrones shabby chic gluten-free forage. Mixtape microdosing cronut, thundercats lumbersexual polaroid man braid tumblr church-key listicle fixie freegan crucifix. Umami chia celiac, kickstarter semiotics seitan pinterest kogi bicycle rights. Asymmetrical cornhole migas, next level lo-fi marfa yuccie pinterest offal semiotics vice leggings fingerstache quinoa. Stumptown blue bottle hella yuccie marfa, hoodie seitan keytar everyday carry crucifix thundercats intelligentsia. Wayfarers salvia YOLO mlkshk kale chips vegan craft beer meditation meggings.', NULL, '12', '12', '12', '12', '2016-05-17 16:13:11');
 
 -- --------------------------------------------------------
 
@@ -7488,14 +7495,22 @@ CREATE TABLE IF NOT EXISTS `kost` (
 --
 
 CREATE TABLE IF NOT EXISTS `pesan` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `pengirim` varchar(50) NOT NULL,
   `id_user` int(11) NOT NULL,
-  `waktu_kirim` datetime NOT NULL,
+  `waktu_kirim` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `isi` text NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `id_user` (`id_user`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  KEY `id_user` (`id_user`),
+  KEY `id_user_2` (`id_user`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `pesan`
+--
+
+INSERT INTO `pesan` (`id`, `pengirim`, `id_user`, `waktu_kirim`, `isi`) VALUES
+(2, 'miral.achmed@gmaill.com', 14, '2016-05-17 15:45:28', 'Humblebrag church-key four loko gochujang. Kale chips mlkshk try-hard cred, banjo wayfarers craft beer deep v vice scenester brooklyn four loko. Meggings distillery pop-up austin, biodiesel mustache brunch. Forage pinterest pitchfork mixtape, brooklyn helvetica bitters flexitarian tattooed chicharrones dreamcatcher waistcoat freegan. Normcore tofu roof party, health goth intelligentsia tote bag everyday carry small batch skateboard pabst beard. Microdosing deep v trust fund intelligentsia cred, pinterest beard direct trade cold-pressed church-key kitsch mixtape kickstarter selvage. Poutine viral chia intelligentsia schlitz offal.\r\n\r\nFingerstache farm-to-table portland organic butcher readymade, listicle hella kogi iPhone kitsch fixie polaroid. Ramps chillwave chicharrones shabby chic gluten-free forage. Mixtape microdosing cronut, thundercats lumbersexual polaroid man braid tumblr church-key listicle fixie freegan crucifix. Umami chia celiac, kickstarter semiotics seitan pinterest kogi bicycle rights. Asymmetrical cornhole migas, next level lo-fi marfa yuccie pinterest offal semiotics vice leggings fingerstache quinoa. Stumptown blue bottle hella yuccie marfa, hoodie seitan keytar everyday carry crucifix thundercats intelligentsia. Wayfarers salvia YOLO mlkshk kale chips vegan craft beer meditation meggings.');
 
 -- --------------------------------------------------------
 
@@ -7557,21 +7572,27 @@ INSERT INTO `provinsi` (`id_provinsi`, `nama_provinsi`) VALUES
 
 CREATE TABLE IF NOT EXISTS `user` (
   `id_user` int(11) NOT NULL AUTO_INCREMENT,
+  `email` varchar(30) NOT NULL,
+  `password` char(32) NOT NULL,
   `nama` varchar(30) DEFAULT NULL,
   `alamat` varchar(200) DEFAULT NULL,
   `tempat_lahir` varchar(20) DEFAULT NULL,
   `tanggal_lahir` date DEFAULT NULL,
-  `jenis_kelamin` enum('L','P') DEFAULT NULL,
+  `jenis_kelamin` char(1) DEFAULT NULL,
   `no_telepon` varchar(14) DEFAULT NULL,
-  `email` varchar(30) NOT NULL,
-  `username` varchar(30) NOT NULL,
-  `password` varchar(15) NOT NULL,
   `tanggal_registrasi` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_user`),
-  UNIQUE KEY `username` (`username`),
   UNIQUE KEY `email` (`email`),
-  UNIQUE KEY `email_2` (`email`,`username`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Tabel untuk pemilik kost' AUTO_INCREMENT=1 ;
+  UNIQUE KEY `email_2` (`email`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Tabel untuk pemilik kost' AUTO_INCREMENT=15 ;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id_user`, `email`, `password`, `nama`, `alamat`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `no_telepon`, `tanggal_registrasi`) VALUES
+(13, 'ridwan.abcd@email.com', '827ccb0eea8a706c4c34a16891f84e7b', 'Ridwan Nugroho', 'Yogyakarta', 'Sleman', '1990-05-18', 'L', '0856565123', '2016-05-17 15:43:41'),
+(14, 'sugeng@email.com', '827ccb0eea8a706c4c34a16891f84e7b', 'Sugeng Santoso', 'Bantul', 'Bantul', '1890-05-04', 'L', '0878970987', '2016-05-17 15:44:39');
 
 --
 -- Constraints for dumped tables
@@ -7590,10 +7611,16 @@ ALTER TABLE `kecamatan`
   ADD CONSTRAINT `fk_kec_kab` FOREIGN KEY (`id_kabupaten`) REFERENCES `kabupaten` (`id_kabupaten`);
 
 --
--- Constraints for table `user`
+-- Constraints for table `kost`
 --
-ALTER TABLE `user`
-  ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `pesan` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `kost`
+  ADD CONSTRAINT `kost_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `user` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `pesan`
+--
+ALTER TABLE `pesan`
+  ADD CONSTRAINT `pesan_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `user` (`id_user`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

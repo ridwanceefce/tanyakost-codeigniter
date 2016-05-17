@@ -35,3 +35,5 @@ git push origin master
 ```
 
 * kemudian buat pull request ke repository ini dengan cara klik **Create pull request** di repository akun masing masing
+
+* jangan lupa di baris codingnya ditambahkan comment dengan bahasa yang jelas

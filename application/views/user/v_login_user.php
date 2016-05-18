@@ -65,15 +65,16 @@
             <div class="panel-heading">
               <h3 class="panel-title">Login</h3>
             </div>
-            <form>
+            <form action="<?= base_url('user/login/masuk') ?>"  method="post">
               <div class="panel-body">
                 <label>Email</label>
-                <input type="email" id="email-user" class="form-control">
+                <input type="email" id="email-user" class="form-control" name="emails">
                 <label>Password</label>
-                <input type="password" id="pass-user" class="form-control">
+                <input type="password" id="pass-user" class="form-control" name="passwd">
               </div>
               <div class="panel-footer">
-                <a href="<?= base_url('user/profil') ?>" class="btn" id="btn-login">Login</a>
+                <button type="submit" class="btn" id="btn-login">Login</button>
+              <!--  -->
                 <p>belum punya akun? <a href="<?= base_url('registrasi') ?>">Daftar</a></p>
               </div>
             </form>

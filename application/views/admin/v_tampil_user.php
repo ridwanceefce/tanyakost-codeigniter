@@ -82,7 +82,7 @@
                             <td><?= $u->email ?></td>
                             <td><?= $u->tanggal_registrasi ?></td>
                             <td>
-                              <a href="<?= base_url('admin/user/id') ?>" class="btn btn-primary btn-xs">detail</a>
+                              <a href="<?= base_url('admin/'.$admin['id'].'/user/'.$u->id_user) ?>" class="btn btn-primary btn-xs">detail</a>
                               <a href="#" class="btn btn-danger btn-xs">hapus</a>
                             </td>
                           </tr>

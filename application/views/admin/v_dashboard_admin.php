@@ -83,7 +83,7 @@
                             <td><?= $u->email ?></td>
                             <td><?= $u->tanggal_registrasi ?></td>
                             <td>
-                              <a href="<?= base_url('admin/'.$admin['id'].'/user/'.$u->id_user) ?>" class="btn btn-primary btn-xs">detail</a>
+                              <a href="<?= base_url('admin/'.$admin['id'].'/user/'.$u->id_user) ?>" class="btn btn-primary btn-xs">Detail</a>
                               <a href="#" class="btn btn-danger btn-xs">hapus</a>
                             </td>
                           </tr>
@@ -112,7 +112,7 @@
                               <div class="row kost-label">
                                 <!-- <p class=""><b>Rp.</b> 300k / bulan</p> -->
                                 <!-- <p class="since">1 minggu yang lalu</p> -->
-                                <a href="<?= base_url('admin/kost/ubah') ?>" class="btn btn-primary btn-sm btn-xs">Ubah</a>
+                                <a href="<?= base_url('admin/kost/ubah') ?>" class="btn btn-primary btn-sm btn-xs">Detail</a>
                                 <a href="#" class="btn btn-danger btn-sm btn-xs">Hapus</a>
                               </div>  <!-- /.kost-label -->
                             </div>

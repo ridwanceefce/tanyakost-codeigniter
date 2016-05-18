@@ -10,6 +10,7 @@
     <meta name="author" content="">
     <?php $this->load->view('layouts/favico'); ?>
     <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
     <title><?php echo $judul ?></title>
@@ -18,15 +19,17 @@
     <link href="<?= base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="<?= base_url('assets/css/admin-detail-user.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/css/admin-kost.css') ?>" rel="stylesheet">
+    <link rel="stylesheet" href="<?= base_url('assets/css/admin-bio.css') ?>"> 
+    <!-- load style untuk bagian admin-bio -->
     <link rel="stylesheet" href="<?= base_url('assets/css/navbar-main.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('assets/css/user-bio.css') ?>"> 
     <link rel="stylesheet" href="<?= base_url('assets/css/normalize.css') ?>">
 
     <!-- Custom Fonts -->
     <link href="<?= base_url('assets/font-awesome/css/font-awesome.min.css') ?>" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,500,700,300' rel='stylesheet' type='text/css'>
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- jQuery -->
     <script src="<?= base_url('assets/js/jquery.js') ?>"></script>
 
@@ -43,7 +46,7 @@
   <body>
 
     <header class="container-fluid">
-      <?php $this->load->view('layouts/navbar-main'); ?>
+      <?php $this->load->view('layouts/navbar-main') ?>
     </header>
 
       <div class="container-fluid">
@@ -55,49 +58,67 @@
 
             <div class="col-md-10 col-sm-8 pd-rl-5" >
               <div class="col-md-12" id="profil-konten">
-                <div id="tampil-user" class="col-md-12">
-                  <a href="<?= base_url('admin/users') ?>" class="btn btn-danger mg-tb-10">Tampilkan semua user</a>
-                  <div class="user-item">
+                <div id="tampil-kost" class="col-md-12">
+                  <a href="<?= base_url('admin/'.$admin['id'].'/kost-user') ?>" class="btn btn-danger mg-tb-10">TAMPILKAN SEMUA KOST</a>
+                  <div class="kost-item">
                     <div class="panel panel-default">
                       <div class="panel-heading">
-                        <h3>User #12</h3>
+                        <h3>Kost #<?= $kost['id_kost'] ?></h3>
                       </div>
                       <div class="panel-body">
-                        <div id="user-bio" class="col-md-8">
-                          <div id="user-name">
-                            <h5>Nama Lengkap</h5>
+                        <div id="kost-bio" class="col-md-8">
+                          <div id="kost-name">
+                            <h5>Nama Kost</h5>
                             <div class="well">
-                              <p>John Achmed</p>
+                              <p><?= $kost['nama_kost'] ?></p>
                             </div>
                           </div>
-                          <div id="user-alamat">
+                          <div id="kost-tipe">
+                            <h5>Tipe Kost</h5>
+                            <div class="well">
+                              <p><?= $kost['tipe_kost'] ?></p>
+                            </div>
+                          </div>
+                          <div id="kost-jenis">
+                            <h5>Jenis Kost</h5>
+                            <div class="well">
+                              <p><?= $kost['jenis_kost'] ?></p>
+                            </div>
+                          </div>
+                          <div id="kost-harga">
+                            <h5>Harga</h5>
+                            <div class="well">
+                              <p><?= $kost['harga'] ?></p>
+                            </div>
+                          </div>
+                          <div id="kost-alamat">
                             <h5>Alamat Lengkap</h5>
                             <div class="well">
                               <p>Jl. Nusa Indah, No. 4, Condongcatur, Depok, Sleman, D.I. Yogyakarta</p>
                             </div>
                           </div>
-                          <div id="user-phone">
-                            <h5>Nomor Telepon</h5>
+                          <div id="kost-fasilitas">
+                            <h5>Fasilitas Kost</h5>
                             <div class="well">
-                              <p>085756457466</p>
+                              <p><?= $kost['fasilitas'] ?></p>
                             </div>
                           </div>
-                          <div id="user-email">
-                            <h5>Alamat email</h5>
+                          <div id="kost-pemilik">
+                            <h5>Pemilik Kost</h5>
                             <div class="well">
-                              <p>achmed.john@gmail.com</p>
+                              <p><?= $kost['id_user'] ?></p>
                             </div>
                           </div>
                         </div>
                         <div id="user-foto" class="col-md-4">
                           <div class="thumbnail">
-                            <img src="<?= base_url('assets/images/pemilik/photo_400x400.jpg') ?>" alt="">
+                            <img src="<?= base_url('assets/images/kosts/sampel-kost-1.jpg') ?>" alt="">
                           </div>
                         </div>
                       </div>
                       <div class="panel-footer">
-                        <a href="#" class="btn btn-success">Perbaharui User</a>
-                        <a href="#" class="btn btn-danger">Hapus User</a>
+                        <a href="#" class="btn btn-success">Perbaharui Kost</a>
+                        <a href="#" class="btn btn-danger">Hapus Kost</a>
                       </div>
                     </div>
                   </div>
@@ -110,8 +131,28 @@
 
       <!-- footer -->
       <div class="container-fluid">
-        <?php $this->load->view('layouts/footer-main'); ?>
+        <footer class="row" id="footer-main">
+          <!-- <div class="container-fluid"> -->
+            <!-- <hr class="hr-white"> -->
+            <div class="col-md-4">
+              <p class="copyright">&copy; 2016 tanyakost.com</p>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+              <nav class="hidden-xs">
+                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </nav>
+            </div>
+          <!-- </div> -->
+        </footer>
       </div>
       <!-- /footer -->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

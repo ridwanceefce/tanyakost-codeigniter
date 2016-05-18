@@ -13,7 +13,7 @@ class Dashboard extends CI_Controller {
     $this->load->model('kost_m'); // load model kost
     $this->load->model('pesan_m');
 
-    $admin = $this->admin_m->ambil_semua_data_admin($id_admin)->row_array(); // simpan data admin di variabel $admin dalam bentuk array
+    $admin = $this->admin_m->ambil_semua_data_admin($id_admin); // simpan data admin di variabel $admin dalam bentuk array
     $users = $this->user_m->ambil_user_terbaru()->result();
     $kosts = $this->kost_m->ambil_kost_terbaru()->result();
     $pesans = $this->pesan_m->ambil_pesan_terbaru()->result();
@@ -34,7 +34,7 @@ class Dashboard extends CI_Controller {
 
     $this->load->model('admin_m');
 
-    $admin = $this->admin_m->ambil_semua_data_admin($id_admin)->row_array();
+    $admin = $this->admin_m->ambil_semua_data_admin($id_admin);
 
     $data['admin'] = $admin;
     $data['judul'] = "Tanyakost.com | Tempat cari kost";

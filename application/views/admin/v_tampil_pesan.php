@@ -85,7 +85,7 @@
                             <td><?= word_limiter($p->isi, 5) ?></td>
                             <td><?= $p->waktu_kirim ?></td>
                             <td>
-                              <a href="<?= base_url('admin/pesan/baca') ?>" class="btn btn-primary btn-xs">baca</a>
+                              <a href="<?= base_url('admin/'.$admin['id'].'/pesan-user/'.$p->id) ?>" class="btn btn-primary btn-xs">baca</a>
                               <a href="#" class="btn btn-danger btn-xs">hapus</a>
                             </td>
                           </tr>

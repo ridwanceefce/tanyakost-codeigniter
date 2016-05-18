@@ -8,7 +8,7 @@ class Admin_m extends CI_Model {
     $this->db->from('admin');
     $this->db->where('id', $id_admin);
     $hasil = $this->db->get();
-    return $hasil;
+    return $hasil->row_array();
   }
 
 }

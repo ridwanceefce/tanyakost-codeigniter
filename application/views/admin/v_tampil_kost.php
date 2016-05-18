@@ -75,7 +75,7 @@
                               <div class="row kost-label">
                                 <!-- <p class=""><b>Rp.</b> 300k / bulan</p> -->
                                 <!-- <p class="since">1 minggu yang lalu</p> -->
-                                <a href="#" class="btn btn-primary btn-xs">Ubah</a>
+                                <a href="<?= base_url('admin/'.$admin['id'].'/kost-user/'.$k->id_kost) ?>" class="btn btn-primary btn-xs">detail</a>
                                 <a href="#" class="btn btn-danger btn-xs">Hapus</a>
                               </div>  <!-- /.kost-label -->
                             </div>

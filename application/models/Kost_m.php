@@ -3,9 +3,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Kost_m extends CI_Model {
 
-  public function get_all_kost() {
+  public function ambil_semua_kost() {
     $kost = $this->db->get('kost')->result();
     return $kost;
+  }
+
+  public function ambil_kost_terbaru() {
+    $this->db->select('*');
+    $this->db->from('kost');
+    $this->db->order_by('id_kost', 'desc');
+    $hasil = $this->db->get();
+    return $hasil;
   }
  
   public function ambil_kost_user($id_user) {

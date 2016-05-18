@@ -75,26 +75,19 @@
                           </tr>
                         </thead>
                         <tbody>
+                        <?php foreach($users as $u): ?>
                           <tr>
-                            <td>1</td>
-                            <td>Miral Achmed</td>
-                            <td>miral.achmed@gmail.com</td>
-                            <td>05-12-2016 15:00:45</td>
+                            <td><?= $no ?></td>
+                            <td><?= $u->nama ?></td>
+                            <td><?= $u->email ?></td>
+                            <td><?= $u->tanggal_registrasi ?></td>
                             <td>
                               <a href="<?= base_url('admin/user/id') ?>" class="btn btn-primary btn-xs">detail</a>
                               <a href="#" class="btn btn-danger btn-xs">hapus</a>
                             </td>
                           </tr>
-                          <tr>
-                            <td>1</td>
-                            <td>Miral Achmed</td>
-                            <td>miral.achmed@gmail.com</td>
-                            <td>05-12-2016 15:00:45</td>
-                            <td>
-                              <a href="<?= base_url('admin/user/id') ?>" class="btn btn-primary btn-xs">detail</a>
-                              <a href="#" class="btn btn-danger btn-xs">hapus</a>
-                            </td>
-                          </tr>
+                        <?php $no++ ?>
+                        <?php endforeach; ?>
                         </tbody>
                       </table>
                     </div>

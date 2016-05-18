@@ -77,17 +77,19 @@
                           </tr>
                         </thead>
                         <tbody class="table-hover">
+                        <?php foreach($pesans as $p): ?>
                           <tr>
-                            <td>1</td>
-                            <td>sdf</td>
-                            <td>sdf</td>
-                            <td>sfads</td>
-                            <td>besok</td>
+                            <td><?= $no ?></td>
+                            <td><?= $p->pengirim ?></td>
+                            <td><?= $p->id_user ?></td>
+                            <td><?= word_limiter($p->isi, 5) ?></td>
+                            <td><?= $p->waktu_kirim ?></td>
                             <td>
                               <a href="<?= base_url('admin/pesan/baca') ?>" class="btn btn-primary btn-xs">baca</a>
                               <a href="#" class="btn btn-danger btn-xs">hapus</a>
                             </td>
                           </tr>
+                        <?php endforeach; ?>
                         </tbody>
                       </table>
                     </div>

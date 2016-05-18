@@ -69,7 +69,7 @@
                       <div class="col-md-3 col-sm-6 col-xs-12 pd-rl-5 mg-tb-10">
                         <div class="kost-item thumbnail">
                           <p class="mg-tb-10"><?= $k->nama_kost ?></p>
-                          <img src="<?= base_url('assets/images/kosts/$k->') ?>" class="image-responsive" alt="">
+                          <img src="<?= base_url('assets/images/kosts/sampel-kost-1.jpg') ?>" class="image-responsive" alt="">
                           <div class="box">
                             <div class="col-md-12">
                               <div class="row kost-label">

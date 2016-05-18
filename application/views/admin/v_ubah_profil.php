@@ -58,6 +58,7 @@
                 <h3><i class="fa fa-user" aria-hidden="true"></i>  Update Data Profil</h3>
                 <hr class="hr-primary">
                 <form>
+                <input type="hidden" name="id" value="<?= $admin['id'] ?>">
                   <div class="row">
                     <div class="col-md-8">
                       <div id="user-pribadi" class="panel panel-default">
@@ -66,11 +67,13 @@
                         </div>
                         <div class="panel-body">
                           <label>Nama Lengkap</label>
-                          <input type="text" name="user-name" name="user-name" id="user-name" class="form-control">
+                          <input type="text" name="user-name" name="user-name" id="user-name" class="form-control"
+                            value="<?= $admin['nama'] ?>">
                           <span id="help-nama-user" class="help-block"><i class="fa fa-question-circle" aria-hidden="true"></i> nama lengkap akan ditampilkan pada detail iklan kost.</span>
 
                           <label>Nomor Telepon</label>
-                          <input type="text" name="telp-user" id="telp-user" class="form-control">
+                          <input type="text" name="telp-user" id="telp-user" class="form-control" 
+                            value="<?= $admin['no_telp'] ?>">
                           <span id="help-telp-user" class="help-block"><i class="fa fa-question-circle" aria-hidden="true"></i> nomor telepon akan ditampilkan pada detail iklan kost.</span>
                         </div>
                       </div> <!-- /#user-pribadi -->
@@ -80,7 +83,8 @@
                         </div>
                         <div class="panel-body">
                           <label>Alamat email</label>
-                          <input type="email" name="email-user" id="email-user" class="form-control">
+                          <input type="email" name="email-user" id="email-user" class="form-control" 
+                            value="<?= $admin['email'] ?>">
 
                           <label>Password</label>
                           <input type="password" name="password-user" id="password-user" class="form-control">

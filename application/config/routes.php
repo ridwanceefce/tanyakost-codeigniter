@@ -69,14 +69,14 @@ $route['user/(:num)/pesan/(:num)'] = 'user/pesan/baca_pesan'; // routing url unt
 
 
 // Routes untuk admin
-$route['admin/profil'] = 'admin/dashboard'; // routing url tampil dashboard user
-$route['admin/users'] = 'admin/user'; // routing url tampil daftar user di admin
-$route['admin/user/id'] = 'admin/user/tampil_detail_user'; // routing url tampil detail user dengan id
-$route['admin/profil/ubah'] = 'admin/dashboard/ubah_profile'; // routing url ubah data profil admin
-$route['admin/kost/tampil'] = 'admin/kost'; // routing url untuk tampil daftar kost di admin
-$route['admin/kost/ubah'] = 'admin/kost/ubah_kost'; // routing url untuk tampil ubah data kost admin
-$route['admin/pesan/tampil'] = 'admin/pesan'; // routing url untuk tampil daftar pesan di admin
-$route['admin/pesan/baca'] = 'admin/pesan/baca_pesan'; // routing url untuk tampilkan baca pesan di admin
+$route['admin/(:num)'] = 'admin/dashboard'; // routing url tampil dashboard user
+$route['admin/(:num)/users'] = 'admin/user'; // routing url tampil daftar user di admin
+$route['admin/(:num)/user/(:num)'] = 'admin/user/tampil_detail_user'; // routing url tampil detail user dengan id
+$route['admin/(:num)/ubah'] = 'admin/dashboard/ubah_profile'; // routing url ubah data profil admin
+$route['admin/(:num)/kost-user'] = 'admin/kost'; // routing url untuk tampil daftar kost di admin
+$route['admin/(:num)/kost-user/(:num)/ubah'] = 'admin/kost/ubah_kost'; // routing url untuk tampil ubah data kost admin
+$route['admin/(:num)/pesan-user'] = 'admin/pesan'; // routing url untuk tampil daftar pesan di admin
+$route['admin/(:num)/pesan-user/(:num)'] = 'admin/pesan/baca_pesan'; // routing url untuk tampilkan baca pesan di admin
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

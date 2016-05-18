@@ -76,26 +76,19 @@
                           </tr>
                         </thead>
                         <tbody>
+                        <?php foreach($users as $u): ?>
                           <tr>
-                            <td>1</td>
-                            <td>Miral Achmed</td>
-                            <td>miral.achmed@gmail.com</td>
-                            <td>05-12-2016 15:00:45</td>
+                            <td><?= $no_user ?></td>
+                            <td><?= $u->nama ?></td>
+                            <td><?= $u->email ?></td>
+                            <td><?= $u->tanggal_registrasi ?></td>
                             <td>
-                              <a href="<?= base_url('admin/user/id') ?>" class="btn btn-primary btn-xs">detail</a>
+                              <a href="<?= base_url('admin/'.$admin['id'].'/user/'.$u->id_user) ?>" class="btn btn-primary btn-xs">detail</a>
                               <a href="#" class="btn btn-danger btn-xs">hapus</a>
                             </td>
                           </tr>
-                          <tr>
-                            <td>1</td>
-                            <td>Miral Achmed</td>
-                            <td>miral.achmed@gmail.com</td>
-                            <td>05-12-2016 15:00:45</td>
-                            <td>
-                              <a href="<?= base_url('admin/user/id') ?>" class="btn btn-primary btn-xs">detail</a>
-                              <a href="#" class="btn btn-danger btn-xs">hapus</a>
-                            </td>
-                          </tr>
+                        <?php $no_user++ ?>
+                        <?php endforeach; ?>
                         </tbody>
                       </table>
                     </div>
@@ -109,8 +102,10 @@
                   <hr class="hr-primary mg-tb-10">
                   <div id="kosts-list" class="col-md-12">
                     <div class="row">
+                      <?php foreach($kosts as $k): ?>
                       <div class="col-md-3 col-sm-6 col-xs-12 pd-rl-5 mg-tb-10">
                         <div class="kost-item thumbnail">
+                          <p class="mg-tb-10"><?= $k->nama_kost ?></p>
                           <img src="<?= base_url('assets/images/sampel-kost-1.jpg') ?>" class="image-responsive" alt="">
                           <div class="box">
                             <div class="col-md-12">
@@ -124,22 +119,7 @@
                           </div> <!-- /.box -->
                         </div> <!-- /.kost-item -->
                       </div>
-
-                      <div class="col-md-3 col-sm-6 col-xs-12 pd-rl-5 mg-tb-10">
-                        <div class="kost-item thumbnail">
-                          <img src="<?= base_url('assets/images/sampel-kost-1.jpg') ?>" class="image-responsive" alt="">
-                          <div class="box">
-                            <div class="col-md-12">
-                              <div class="row kost-label">
-                                <!-- <p class=""><b>Rp.</b> 300k / bulan</p> -->
-                                <!-- <p class="since">1 minggu yang lalu</p> -->
-                                <a href="<?= base_url('admin/kost/ubah') ?>" class="btn btn-primary btn-xs">Ubah</a>
-                                <a href="#" class="btn btn-danger btn-xs">Hapus</a>
-                              </div>  <!-- /.kost-label -->
-                            </div>
-                          </div> <!-- /.box -->
-                        </div> <!-- /.kost-item -->
-                      </div>
+                      <?php endforeach; ?>
                     </div>
                   </div> <!-- /#kost-list -->
                 </div> <!-- /.konten-kost -->
@@ -162,26 +142,19 @@
                           </tr>
                         </thead>
                         <tbody>
+                        <?php foreach($pesans as $p): ?>
                           <tr>
-                            <td>1</td>
-                            <td>sdf</td>
-                            <td>sfads</td>
-                            <td>besok</td>
+                            <td><?= $no_pesan ?></td>
+                            <td><?= $p->pengirim ?></td>
+                            <td><?= word_limiter($p->isi, 5) ?></td>
+                            <td><?= $p->waktu_kirim ?></td>
                             <td>
                               <a href="<?= base_url('admin/pesan/baca') ?>" class="btn btn-primary btn-xs">baca</a>
                               <a href="#" class="btn btn-danger btn-xs">hapus</a>
                             </td>
                           </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>sdf</td>
-                            <td>sfads</td>
-                            <td>sdfa</td>
-                            <td>
-                              <a href="<?= base_url('admin/pesan/baca') ?>" class="btn btn-primary btn-xs">baca</a>
-                              <a href="#" class="btn btn-danger btn-xs">hapus</a>
-                            </td>
-                          </tr>
+                        <?php $no_pesan++ ?>
+                        <?php endforeach; ?>
                         </tbody>
                       </table>
                     </div>

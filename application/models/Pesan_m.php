@@ -7,6 +7,15 @@ class Pesan_m extends CI_Model {
     return $pesan;
   }
 
+  public function ambil_pesan_terbaru() {
+    $this->db->select('*');
+    $this->db->from('pesan');
+    $this->db->order_by('id', 'id');
+    $this->db->limit(5);
+    $hasil = $this->db->get();
+    return $hasil;
+  }
+
   public function ambil_pesan_user($id_user) {
     $this->db->select('*');
     $this->db->from('pesan');

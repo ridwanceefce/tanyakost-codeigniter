@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 17, 2016 at 11:42 PM
+-- Generation Time: May 18, 2016 at 08:47 AM
 -- Server version: 5.5.49-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.16
 
@@ -29,11 +29,18 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `admin` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `email` varchar(30) NOT NULL,
-  `password` varchar(15) NOT NULL,
+  `password` char(32) NOT NULL,
   `nama` varchar(50) NOT NULL,
   `no_telp` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `email`, `password`, `nama`, `no_telp`) VALUES
+(2, 'mira@email.com', '827ccb0eea8a706c4c34a16891f84e7b', 'Miral Achmed', '085756568615');
 
 -- --------------------------------------------------------
 
@@ -7470,7 +7477,7 @@ CREATE TABLE IF NOT EXISTS `kost` (
   `tipe_kost` varchar(50) NOT NULL,
   `photo` varchar(30) DEFAULT NULL,
   `harga` int(11) NOT NULL,
-  `deskrpsi` text,
+  `deskripsi` text,
   `fasilitas` text,
   `id_provinsi` varchar(30) NOT NULL,
   `id_kabupaten` varchar(30) NOT NULL,
@@ -7479,14 +7486,15 @@ CREATE TABLE IF NOT EXISTS `kost` (
   `tanggal_upload` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_kost`),
   KEY `id_user` (`id_user`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `kost`
 --
 
-INSERT INTO `kost` (`id_kost`, `id_user`, `nama_kost`, `jenis_kost`, `tipe_kost`, `photo`, `harga`, `deskrpsi`, `fasilitas`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `jalan`, `tanggal_upload`) VALUES
-(1, 14, 'Mawat', 'Putra', 'Bulanan', NULL, 100000, 'Humblebrag church-key four loko gochujang. Kale chips mlkshk try-hard cred, banjo wayfarers craft beer deep v vice scenester brooklyn four loko. Meggings distillery pop-up austin, biodiesel mustache brunch. Forage pinterest pitchfork mixtape, brooklyn helvetica bitters flexitarian tattooed chicharrones dreamcatcher waistcoat freegan. Normcore tofu roof party, health goth intelligentsia tote bag everyday carry small batch skateboard pabst beard. Microdosing deep v trust fund intelligentsia cred, pinterest beard direct trade cold-pressed church-key kitsch mixtape kickstarter selvage. Poutine viral chia intelligentsia schlitz offal.\r\n\r\nFingerstache farm-to-table portland organic butcher readymade, listicle hella kogi iPhone kitsch fixie polaroid. Ramps chillwave chicharrones shabby chic gluten-free forage. Mixtape microdosing cronut, thundercats lumbersexual polaroid man braid tumblr church-key listicle fixie freegan crucifix. Umami chia celiac, kickstarter semiotics seitan pinterest kogi bicycle rights. Asymmetrical cornhole migas, next level lo-fi marfa yuccie pinterest offal semiotics vice leggings fingerstache quinoa. Stumptown blue bottle hella yuccie marfa, hoodie seitan keytar everyday carry crucifix thundercats intelligentsia. Wayfarers salvia YOLO mlkshk kale chips vegan craft beer meditation meggings.', NULL, '12', '12', '12', '12', '2016-05-17 16:13:11');
+INSERT INTO `kost` (`id_kost`, `id_user`, `nama_kost`, `jenis_kost`, `tipe_kost`, `photo`, `harga`, `deskripsi`, `fasilitas`, `id_provinsi`, `id_kabupaten`, `id_kecamatan`, `jalan`, `tanggal_upload`) VALUES
+(1, 14, 'Mawat', 'Tahunan', 'Putra', NULL, 100000, 'Humblebrag church-key four loko gochujang. Kale chips mlkshk try-hard cred, banjo wayfarers craft beer deep v vice scenester brooklyn four loko. Meggings distillery pop-up austin, biodiesel mustache brunch. Forage pinterest pitchfork mixtape, brooklyn helvetica bitters flexitarian tattooed chicharrones dreamcatcher waistcoat freegan. Normcore tofu roof party, health goth intelligentsia tote bag everyday carry small batch skateboard pabst beard. Microdosing deep v trust fund intelligentsia cred, pinterest beard direct trade cold-pressed church-key kitsch mixtape kickstarter selvage. Poutine viral chia intelligentsia schlitz offal.\r\n\r\nFingerstache farm-to-table portland organic butcher readymade, listicle hella kogi iPhone kitsch fixie polaroid. Ramps chillwave chicharrones shabby chic gluten-free forage. Mixtape microdosing cronut, thundercats lumbersexual polaroid man braid tumblr church-key listicle fixie freegan crucifix. Umami chia celiac, kickstarter semiotics seitan pinterest kogi bicycle rights. Asymmetrical cornhole migas, next level lo-fi marfa yuccie pinterest offal semiotics vice leggings fingerstache quinoa. Stumptown blue bottle hella yuccie marfa, hoodie seitan keytar everyday carry crucifix thundercats intelligentsia. Wayfarers salvia YOLO mlkshk kale chips vegan craft beer meditation meggings.', 'Lemari, Tempat Tidur, Kamar mandi dalam', '12', '12', '12', '12', '2016-05-18 01:35:28'),
+(2, 13, 'Melati', 'Bulanan', 'Putra', NULL, 100000, 'Humblebrag church-key four loko gochujang. Kale chips mlkshk try-hard cred, banjo wayfarers craft beer deep v vice scenester brooklyn four loko. Meggings distillery pop-up austin, biodiesel mustache brunch. Forage pinterest pitchfork mixtape, brooklyn helvetica bitters flexitarian tattooed chicharrones dreamcatcher waistcoat freegan. Normcore tofu roof party, health goth intelligentsia tote bag everyday carry small batch skateboard pabst beard. Microdosing deep v trust fund intelligentsia cred, pinterest beard direct trade cold-pressed church-key kitsch mixtape kickstarter selvage. Poutine viral chia intelligentsia schlitz offal.\r\n\r\nFingerstache farm-to-table portland organic butcher readymade, listicle hella kogi iPhone kitsch fixie polaroid. Ramps chillwave chicharrones shabby chic gluten-free forage. Mixtape microdosing cronut, thundercats lumbersexual polaroid man braid tumblr church-key listicle fixie freegan crucifix. Umami chia celiac, kickstarter semiotics seitan pinterest kogi bicycle rights. Asymmetrical cornhole migas, next level lo-fi marfa yuccie pinterest offal semiotics vice leggings fingerstache quinoa. Stumptown blue bottle hella yuccie marfa, hoodie seitan keytar everyday carry crucifix thundercats intelligentsia. Wayfarers salvia YOLO mlkshk kale chips vegan craft beer meditation meggings.', NULL, '12', '12', '12', '12', '2016-05-18 01:38:59');
 
 -- --------------------------------------------------------
 
@@ -7579,20 +7587,21 @@ CREATE TABLE IF NOT EXISTS `user` (
   `tempat_lahir` varchar(20) DEFAULT NULL,
   `tanggal_lahir` date DEFAULT NULL,
   `jenis_kelamin` char(1) DEFAULT NULL,
-  `no_telepon` varchar(14) DEFAULT NULL,
+  `telepon` varchar(14) DEFAULT NULL,
   `tanggal_registrasi` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_user`),
   UNIQUE KEY `email` (`email`),
   UNIQUE KEY `email_2` (`email`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Tabel untuk pemilik kost' AUTO_INCREMENT=15 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Tabel untuk pemilik kost' AUTO_INCREMENT=16 ;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id_user`, `email`, `password`, `nama`, `alamat`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `no_telepon`, `tanggal_registrasi`) VALUES
+INSERT INTO `user` (`id_user`, `email`, `password`, `nama`, `alamat`, `tempat_lahir`, `tanggal_lahir`, `jenis_kelamin`, `telepon`, `tanggal_registrasi`) VALUES
 (13, 'ridwan.abcd@email.com', '827ccb0eea8a706c4c34a16891f84e7b', 'Ridwan Nugroho', 'Yogyakarta', 'Sleman', '1990-05-18', 'L', '0856565123', '2016-05-17 15:43:41'),
-(14, 'sugeng@email.com', '827ccb0eea8a706c4c34a16891f84e7b', 'Sugeng Santoso', 'Bantul', 'Bantul', '1890-05-04', 'L', '0878970987', '2016-05-17 15:44:39');
+(14, 'sugeng@email.com', '827ccb0eea8a706c4c34a16891f84e7b', 'Sugeng Santoso', 'Bantul', 'Bantul', '1890-05-04', 'L', '0878970987', '2016-05-17 15:44:39'),
+(15, 'user3@email.com', '827ccb0eea8a706c4c34a16891f84e7b', 'Ryan Dwi Septyawan', 'Dekat Pasar Pasti', 'Yogyakarta', '1996-05-05', 'L', '08574642343', '2016-05-17 23:17:50');
 
 --
 -- Constraints for dumped tables

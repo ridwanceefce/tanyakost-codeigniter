@@ -32,4 +32,12 @@ class Kost_m extends CI_Model {
     return $hasil;
   }
 
+  public function ambil_kost_id($id_kost) {
+    $this->db->select('*');
+    $this->db->from('kost');
+    $this->db->where('id_kost', $id_kost);
+    $hasil = $this->db->get();
+    return $hasil;
+  }
+
 }

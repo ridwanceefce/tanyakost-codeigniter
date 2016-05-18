@@ -49,7 +49,7 @@
           <div class="row pd-rl-5">
               <div class="col-md-9 pd-rl-5">
                 <div class="col-md-12" id="konten-show">
-                  <h2>Detail kost - nusa indah 2</h2>
+                  <h2>Detail kost - <?= $kost['nama_kost'] ?></h2>
                   <hr class="hr-bio mg-tb-10">
                   <p class="time">2 minggu lalu</p>
                   <div class="col-md-8 pd-rl-5" id="photo">
@@ -71,15 +71,13 @@
                     </ul>
                     <div class="tab-content">
                       <div id="deskripsi" class="tab-pane fade in active">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae deleniti itaque aliquam eveniet aperiam debitis quos excepturi. Maiores cum in enim explicabo architecto et, dolores fugit magnam numquam blanditiis, sapiente.</p>
+                        <p><?= $kost['deskripsi'] ?></p>
                       </div>
                       <div id="fasilitas" class="tab-pane fade">
-                        <ul>
-                          <li>Lemari</li>
-                        </ul>
+                        <p><?= $kost['fasilitas'] ?></p>
                       </div>
                       <div id="harga" class="tab-pane fade">
-                        <p>Rp. 300.000,00 / bulan</p>
+                        <p>Rp. <?= $kost['harga'] ?> / <?= $kost['jenis_kost'] ?></p>
                       </div>
                     </div> <!-- /.tab-content -->
                   </div>
@@ -91,23 +89,24 @@
                     <hr class="hr-bio mg-tb-10">
                     <div class="bio-head">
                       <img src="<?= base_url('assets/images/pemilik/photo_400x400.jpg') ?>" class="img-responsive img-circle" alt="">
-                      <p class="nama-pemilik">Ridwan Nugroho</p>
+                      <p class="nama-pemilik"><?= $user['nama'] ?></p>
                       <p class="since">Member sejak Apr 2015</p>
                     </div>
                     <hr class="hr-bio mg-tb-10">
                     <div class="bio-contact">
                       <p>
                         <i class="fa fa-map-marker" aria-hidden="true"></i> 
-                        Jl. Nusa Indah, No. 25, <br> Condongcatur, Depok, Sleman, Yogyakarta 
+                        <?= $user['alamat'] ?>
                       </p>
                       <p>
                         <i class="fa fa-phone" aria-hidden="true"></i> 
-                        +62 857 1234 6787
+                        <?= $user['telepon'] ?>
                       </p>
                     </div>
                     <hr class="hr-bio mg-tb-10">
                     <div class="bio-message">
                       <form>
+                        <input type="hidden" name="id" value="<?= $user['id_user'] ?>">
                         <label>Hubungi pemilik kost</label>
                         <textarea name="pesan" id="pesan-user" class="form-control" rows="5" placeholder="Tuliskan pesan Anda ..."></textarea>
                         <input type="text" name="email" id="email-user" class="form-control" placeholder="isikan email Anda ...">

@@ -87,11 +87,11 @@
         </div>
         <div class="col-md-10 pd-rl-5" >
           <div class="col-md-12" id="konten">
-            <h2>Hasil pencarian: <span>"Condongcatur"</span></h2>
+            <h2>Hasil pencarian: <span>"<?= $keyword ?>"</span></h2>
             <hr class="hr-primary">
             <div id="kosts-list" class="clearfix">
               <div class="col-md-3 pd-rl-5">
-                <a href="<?= base_url('cari/id') ?>">
+                <a href="<?= base_url('kost/detail/1') ?>">
                   <div class="kost-item thumbnail">
                     <img src="<?= base_url('assets/images/kosts/sampel-kost-1.jpg') ?>" class="image-responsive" alt="">
                     <div class="box">
@@ -99,30 +99,6 @@
                     </div>
                   </div>
                 </a>
-              </div>
-              <div class="col-md-3 pd-rl-5">
-                <div class="kost-item thumbnail">
-                  <img src="<?= base_url('assets/images/kosts/sampel-kost-1.jpg') ?>" class="image-responsive" alt="">
-                  <div class="box">
-                    <p><b>Rp.</b> 300k / bulan</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 pd-rl-5">
-                <div class="kost-item thumbnail">
-                  <img src="<?= base_url('assets/images/kosts/sampel-kost-1.jpg') ?>" class="image-responsive" alt="">
-                  <div class="box">
-                    <p><b>Rp.</b> 300k / bulan</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 pd-rl-5">
-                <div class="kost-item thumbnail">
-                  <img src="<?= base_url('assets/images/kosts/sampel-kost-1.jpg') ?>" class="image-responsive" alt="">
-                  <div class="box">
-                    <p><b>Rp.</b> 300k / bulan</p>
-                  </div>
-                </div>
               </div>
             </div> <!-- /#kost-list -->
           </div><!--  /#konten -->

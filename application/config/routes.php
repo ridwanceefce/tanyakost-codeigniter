@@ -50,8 +50,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'home'; // default controller
-$route['cari'] = 'home/cari_kost'; // routing url untuk tampil hasil cari kost
-$route['cari/id'] = 'home/cari_detail'; // routing url untuk tampil detail cari kost
+$route['kost/(:any)'] = 'home/cari_kost'; // routing url untuk tampil hasil cari kost
+$route['kost/detail/(:num)'] = 'home/cari_detail'; // routing url untuk tampil detail cari kost
 
 $route['login-user'] = 'user/login'; // routing url /login-user ke constroller login_user pada folder user
 $route['login-admin'] = 'admin/login'; // routing url /login-admin ke controller login_admin pada folder admin
